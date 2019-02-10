@@ -1,8 +1,15 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
 // components
-import Cards from '../Cards';
+import Cards from "../Cards";
 
 // Cards section
-storiesOf('Cards', module).add('show Cards', () => <Cards />);
+storiesOf("Cards", module)
+  .addParameters({
+    info: {
+      inline: true,
+      header: false
+    }
+  })
+  .add("show Cards", () => <Cards />);

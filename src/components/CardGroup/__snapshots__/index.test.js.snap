@@ -10,11 +10,18 @@ exports[`CardGroup it should render 1`] = `
     <div
       className="col-10 offset-1"
     >
-      <h1
-        className="display-4 pt-5"
+      <p
+        className="pt-5"
+        style={
+          Object {
+            "fontSize": "calc(26px + 1.5vw + 0.5vmin)",
+            "fontWeight": "300",
+            "lineHeight": "1.2",
+          }
+        }
       >
         What the Power of Pacific Means for You
-      </h1>
+      </p>
       <div
         className="card-group my-3"
       >

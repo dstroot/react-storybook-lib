@@ -26,8 +26,14 @@ library.add(faSpinner, faCheck, faCheckCircle, faExclamationTriangle);
  * STORIES
  */
 
-storiesOf("Welcome", module).add("to Storybook", () => (
-  <div>
-    <h1 className="display-4">Welcome to our storybook!</h1>
-  </div>
-));
+storiesOf("Welcome", module)
+  .addParameters({
+    info: {
+      disable: true
+    }
+  })
+  .add("to Storybook", () => (
+    <div>
+      <h1 className="display-4">Welcome to our storybook!</h1>
+    </div>
+  ));

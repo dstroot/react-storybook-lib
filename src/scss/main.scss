@@ -10,3 +10,8 @@ $theme-colors: (
 
 // then import Bootstrap
 @import "bootstrap";
+
+// then components
+@import "../components/ContactUs/styles.scss";
+// @import "../components/NavBar/styles.scss";
+// @import "../components/FourOhFour/styles.scss";

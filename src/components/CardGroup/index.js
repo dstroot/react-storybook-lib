@@ -1,20 +1,27 @@
 import React from "react";
 
+// styles
+import "./styles.scss";
+
 // import SVG files
 import { ReactComponent as Flag } from "./media/flag.svg";
 import { ReactComponent as Locked } from "./media/locked.svg";
 import { ReactComponent as Handshake } from "./media/handshake.svg";
 
-import "./styles.scss";
-
 const CardGroup = () => {
+  const textBig = {
+    fontSize: `calc(26px + 1.5vw + 0.5vmin)`,
+    lineHeight: "1.2",
+    fontWeight: "300"
+  };
+
   return (
     <div className="container-fluid bg-primary text-center text-white">
       <div className="row">
         <div className="col-10 offset-1">
-          <h1 className="display-4 pt-5">
+          <p style={textBig} className="pt-5">
             What the Power of Pacific Means for You
-          </h1>
+          </p>
           <div className="card-group my-3">
             <div className="card bg-primary border-0">
               <div className="svg-container mx-auto">

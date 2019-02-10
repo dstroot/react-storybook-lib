@@ -9,9 +9,17 @@ import responsibility from "./media/corp_resp.jpg";
 import "./styles.scss";
 
 /**
-The AboutUs component is a static component with no props or state.  It renders information about our company. 
+The AboutUs component is a static component with no props or state.  
+It renders information about our company. It has a couple additional styles 
+that it imports directly.
  */
 const AboutUs = () => {
+  const textBig = {
+    fontSize: `calc(26px + 1.5vw + 0.5vmin)`,
+    lineHeight: "1.2",
+    fontWeight: "300"
+  };
+
   return (
     <>
       {/*
@@ -24,16 +32,16 @@ const AboutUs = () => {
         <div className="card-deck m-3 text-center">
           <div className="card mb-4">
             <div className="card-body">
-              <h1 className="display-3 text-primary">
+              <p className="display-4 text-primary">
                 <CountUp delay={1} duration={2} end={150} />
-              </h1>
+              </p>
               <h3>Year History</h3>
               <p className="lead">A promise that we will be there.</p>
             </div>
           </div>
           <div className="card mb-4">
             <div className="card-body">
-              <h1 className="display-3 text-primary">
+              <p className="display-4 text-primary">
                 <CountUp
                   delay={1}
                   duration={2}
@@ -41,14 +49,14 @@ const AboutUs = () => {
                   suffix="B"
                   end={158}
                 />
-              </h1>
+              </p>
               <h3>In Assets</h3>
               <p className="lead">Financial stability you can rely on.</p>
             </div>
           </div>
           <div className="card mb-4">
             <div className="card-body">
-              <h1 className="display-3 text-primary">
+              <p className="display-4 text-primary">
                 <CountUp
                   delay={1}
                   duration={2}
@@ -57,7 +65,7 @@ const AboutUs = () => {
                   decimals={1}
                   end={6.6}
                 />
-              </h1>
+              </p>
               <h3>In Donations</h3>
               <p className="lead">Positively impacting our community.</p>
             </div>
@@ -75,9 +83,9 @@ const AboutUs = () => {
         <div className="container">
           <div className="row bg-primary text-white pt-5 pb-5">
             <div className="col">
-              <h1 className="display-4 text-uppercase">
-                Power of Pacific Life
-              </h1>
+              <p style={textBig} className="text-uppercase">
+                The Power of Pacific Life
+              </p>
               <p className="lead">
                 When you purchase life insurance and retirement solutions,
                 you're highly invested in your financial future. And so are we.
@@ -102,7 +110,7 @@ const AboutUs = () => {
         <div className="row">
           <div className="col-md-6 d-flex align-items-center order-2 order-md-1 mb-4 mt-4">
             <div className="">
-              <h1 className="display-4">Our Financial Strength</h1>
+              <p style={textBig}>Our Financial Strength</p>
               <p className="lead">
                 Financial decisions are long-term. That’s why the carrier you
                 choose to support you matters. Your insurer’s financial future
@@ -139,7 +147,7 @@ const AboutUs = () => {
 
           <div className="col-md-6 d-flex align-items-center mb-4 mt-4">
             <div className="">
-              <h1 className="display-4">Our Corporate Responsibility</h1>
+              <p style={textBig}>Our Corporate Responsibility</p>
               <p className="lead">
                 The Pacific Life Foundation allows us to collectively extend the
                 power of our impact on the world around us. We’re proud of our

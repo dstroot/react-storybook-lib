@@ -5,4 +5,11 @@ import { storiesOf } from "@storybook/react";
 import ContactUs from "../ContactUs";
 
 // ContactUs section
-storiesOf("ContactUs", module).add("show ContactUs", () => <ContactUs />);
+storiesOf("ContactUs", module)
+  .addParameters({
+    info: {
+      inline: true,
+      header: false
+    }
+  })
+  .add("show ContactUs", () => <ContactUs />);

@@ -1,13 +1,13 @@
 import React from "react";
 
+// styles
+import "./styles.scss";
+
 // images
 import card1 from "./media/card1.jpg";
 import card2 from "./media/card2.jpg";
 import card3 from "./media/card3.jpg";
-// import { ReactComponent as Clock } from './media/clock.svg';
-import Clock from "./media/clock.svg";
-
-import "./styles.scss";
+import { ReactComponent as Clock } from "./media/clock.svg";
 
 const Cards = () => (
   <div className="container-fluid bg-light pb-5">
@@ -31,7 +31,7 @@ const Cards = () => (
               Read
             </a>
             <div className="d-inline p-2">
-              <img src={Clock} alt="clock" height="15px" width="15px" />
+              <Clock height="15px" width="15px" />
               <strong className="align-middle"> 5 min read</strong>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Cards = () => (
               Read
             </a>
             <div className="d-inline p-2">
-              <img src={Clock} alt="clock" height="15px" width="15px" />
+              <Clock height="15px" width="15px" />
               <strong className="align-middle"> 7 min read</strong>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Cards = () => (
               Read
             </a>
             <div className="d-inline p-2">
-              <img src={Clock} alt="clock" height="15px" width="15px" />
+              <Clock height="15px" width="15px" />
               <strong className="align-middle"> 3 min read</strong>
             </div>
           </div>
