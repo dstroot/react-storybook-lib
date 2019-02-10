@@ -1,17 +1,19 @@
-import React from 'react';
+import React from "react";
 
 // images
-import card1 from './media/card1.jpg';
-import card2 from './media/card2.jpg';
-import card3 from './media/card3.jpg';
+import card1 from "./media/card1.jpg";
+import card2 from "./media/card2.jpg";
+import card3 from "./media/card3.jpg";
 // import { ReactComponent as Clock } from './media/clock.svg';
-import Clock from './media/clock.svg';
+import Clock from "./media/clock.svg";
+
+import "./styles.scss";
 
 const Cards = () => (
   <div className="container-fluid bg-light pb-5">
     <div className="row">
       <div className="col text-center p-4">
-        <h1 className="display-4">INSIGHTS TO HELP YOU MEET YOUR GOALS</h1>
+        <h1 className="card-display">INSIGHTS TO HELP YOU MEET YOUR GOALS</h1>
       </div>
     </div>
     <div className="row">

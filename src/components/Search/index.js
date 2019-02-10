@@ -1,6 +1,6 @@
 import React from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
-import image from "./media/financial_pro.jpg";
+import image from "./media/financial_pro_2.jpg";
 import Disclosure from "../Disclosure";
 
 const textBig = {

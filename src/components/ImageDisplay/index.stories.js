@@ -1,6 +1,7 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { storiesOf } from "@storybook/react";
 
+// components
 import ImageDisplay from "../ImageDisplay";
 
 // images
@@ -17,8 +18,7 @@ import img9 from "./media/startup.jpg";
 // image array
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
-test("ImageDisplay renders some content", () => {
-  const component = renderer.create(<ImageDisplay images={images} />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-});
+// ImageDisplay section
+storiesOf("ImageDisplay", module).add("show ImageDisplay", () => (
+  <ImageDisplay images={images} />
+));

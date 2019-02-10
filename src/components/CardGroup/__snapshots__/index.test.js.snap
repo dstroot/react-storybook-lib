@@ -24,10 +24,9 @@ exports[`CardGroup it should render 1`] = `
           <div
             className="svg-container mx-auto"
           >
-            <img
-              alt="flag"
-              src="flag.svg"
-            />
+            <svg>
+              flag.svg
+            </svg>
           </div>
           <div
             className="card-body"
@@ -50,10 +49,9 @@ exports[`CardGroup it should render 1`] = `
           <div
             className="svg-container mx-auto"
           >
-            <img
-              alt="locked"
-              src="locked.svg"
-            />
+            <svg>
+              locked.svg
+            </svg>
           </div>
           <div
             className="card-body"
@@ -76,10 +74,9 @@ exports[`CardGroup it should render 1`] = `
           <div
             className="svg-container d-block mx-auto align-bottom"
           >
-            <img
-              alt="handshake"
-              src="handshake.svg"
-            />
+            <svg>
+              handshake.svg
+            </svg>
           </div>
           <div
             className="card-body"

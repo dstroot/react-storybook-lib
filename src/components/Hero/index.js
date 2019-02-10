@@ -1,5 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+
+// Styles
+import "./styles.scss";
 
 const Hero = ({ align, image, tagline, text, attribution }) => {
   return (
@@ -7,37 +10,37 @@ const Hero = ({ align, image, tagline, text, attribution }) => {
       className="hero text-white"
       style={{
         backgroundImage: `url(${image})`,
-        backgroundSize: `cover`,
+        backgroundSize: `cover`
       }}
     >
       <div className="container-fluid">
-        {align === 'left' && (
+        {align === "left" && (
           <div className="row align-items-center p-2">
             <div className="col-md-4 offset-md-1 p-lg-5 my-5 bg-shade">
-              <h6 className="text-uppercase">{tagline || ''}</h6>
-              <h3 className="font-weight-light">{text || ''}</h3>
-              <p className="font-weight-light">{attribution || ''}</p>
+              <h6 className="text-uppercase">{tagline || ""}</h6>
+              <h3 className="font-weight-light">{text || ""}</h3>
+              <p className="font-weight-light">{attribution || ""}</p>
             </div>
           </div>
         )}
-        {align === 'center' && (
+        {align === "center" && (
           <>
             <div className="row pt-5 mt-5" />
             <div className="row pt-5 align-items-bottom">
               <div className="col-md-6 offset-md-3 mt-5 p-3 text-center bg-shade">
-                <h6 className="text-uppercase">{tagline || ''}</h6>
-                <h1 className="display-4">{text || ''}</h1>
-                <p className="font-weight-light">{attribution || ''}</p>
+                <h6 className="text-uppercase">{tagline || ""}</h6>
+                <h1 className="display-4">{text || ""}</h1>
+                <p className="font-weight-light">{attribution || ""}</p>
               </div>
             </div>
           </>
         )}
-        {align === 'right' && (
+        {align === "right" && (
           <div className="row align-items-center p-2">
             <div className="col-md-4 offset-md-7 p-lg-5 my-5 bg-shade">
-              <h6 className="text-uppercase">{tagline || ''}</h6>
-              <h3 className="font-weight-light">{text || ''}</h3>
-              <p className="font-weight-light">{attribution || ''}</p>
+              <h6 className="text-uppercase">{tagline || ""}</h6>
+              <h3 className="font-weight-light">{text || ""}</h3>
+              <p className="font-weight-light">{attribution || ""}</p>
             </div>
           </div>
         )}
@@ -51,7 +54,7 @@ Hero.propTypes = {
   image: PropTypes.string.isRequired,
   tagline: PropTypes.string,
   text: PropTypes.string,
-  attribution: PropTypes.string,
+  attribution: PropTypes.string
 };
 
 export default Hero;

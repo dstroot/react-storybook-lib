@@ -55,5 +55,33 @@ exports[`Search it should render 1`] = `
       </form>
     </div>
   </div>
+  <div
+    className="row mt-3"
+  >
+    <div
+      className="col"
+    >
+      <p
+        className="text-muted small"
+      >
+        In order to sell life insurance, a financial professional must be a properly licensed and appointed life insurance producer.
+          
+        <span
+          className=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "fontWeight": "600",
+            }
+          }
+        >
+          [ 
+          More +
+           ]
+        </span>
+      </p>
+    </div>
+  </div>
 </div>
 `;

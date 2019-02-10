@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroVideo it should render 1`] = `
+<div
+  style={
+    Object {
+      "backgroundPosition": "center",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "cover",
+      "height": "40vw",
+      "minHeight": "225px",
+      "position": "relative",
+    }
+  }
+>
+  <video
+    async=""
+    autoPlay=""
+    className="bg-black"
+    loop=""
+    muted=""
+    poster="data:image/gif,AAAA"
+    style={
+      Object {
+        "background": "transparent",
+        "height": "100vh",
+        "url": "(//images.ctfassets.net/uw229zq1tzc4/6mhWavUAFUGrfKwkylCPqM/c2dcbb66c2959c1fe8164cf779d3302b/home-hero-poster-image.jpg) no-repeat 0 0",
+        "width": "100vw",
+      }
+    }
+  >
+    <source
+      src="//videos.ctfassets.net/uw229zq1tzc4/3CYVQZf6e4EyACIEEKOaio/867dda9b5beb1b7d8f1c34261029b02a/HiRes_CC_Text_Removed.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <div
+    style={
+      Object {
+        "bottom": "5vw",
+        "color": "white",
+        "position": "absolute",
+        "textAlign": "center",
+        "width": "100vw",
+      }
+    }
+  >
+    <div
+      className="Container w-100 white"
+    >
+      <h1
+        className="white"
+      >
+        <div>
+          <div
+            className=""
+          >
+            <div
+              style={
+                Object {
+                  "opacity": "1",
+                  "transform": "translate3d(0px, 0%, 0px)",
+                }
+              }
+            >
+              Engineers
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            className=""
+          >
+            <div
+              style={
+                Object {
+                  "opacity": "1",
+                  "transform": "translate3d(0px, 0%, 0px)",
+                }
+              }
+            >
+              build business.
+            </div>
+          </div>
+        </div>
+      </h1>
+      <div
+        className=""
+      >
+        <div
+          style={
+            Object {
+              "opacity": "1",
+              "transform": "translate3d(0px, 0%, 0px)",
+            }
+          }
+        >
+          <p
+            className=""
+          >
+            Accelerate velocity and release products faster with visibility into your software engineering team.
+          </p>
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <div
+          style={
+            Object {
+              "opacity": "1",
+              "transform": "translate3d(0px, 0%, 0px)",
+            }
+          }
+        >
+          <div
+            className="inline-flex flex-column items-start flex-row-ns items-center-ns"
+          >
+            <a
+              className="calibre-semi-bold items-center justify-center Button__OutlineButton-sc-1idqtbc-1 kapTDN"
+              href="/signup/"
+              theme="outline-white"
+            >
+              Get Started
+            </a>
+            <a
+              className="calibre-semi-bold flex align-center pointer link HomepageHero__StyledLink-nd7a3l-4 ehOZoT white Link__StyledLinkWithHover-ja2hfi-3 lepUtB"
+              href="/platform/code/"
+              theme="white"
+            >
+              <div
+                className="Link__ArrowWrapper-ja2hfi-0 fWkNVq"
+              >
+                <svg
+                  height="12"
+                  viewBox="0 0 8 11"
+                  width="10"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1l5 4.5L1 10"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#FFF"
+                    strokeWidth="2"
+                    style={
+                      Object {
+                        "transition": "stroke 350ms ease",
+                      }
+                    }
+                  />
+                </svg>
+              </div>
+              <div
+                className=""
+              >
+                Explore the platform
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

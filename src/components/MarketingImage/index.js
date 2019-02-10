@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Styles
+import "./styles.scss";
+
 const MarketingImage = ({ lead, text, image, url }) => {
   return (
     <a href={url}>

@@ -1,10 +1,10 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { Link } from "@reach/router";
 
 // import SVG files directly as React components. The ReactComponent import
 // name is special and tells Create React App that you want a React
 // component that renders an SVG, rather than its filename.
-import { ReactComponent as Robot } from './media/robot.svg';
+import { ReactComponent as Robot } from "./media/robot.svg";
 
 const ContactUs = () => {
   return (
@@ -20,9 +20,9 @@ const ContactUs = () => {
           <Robot />
         </div>
         <br />
-        <NavLink className="btn btn-lg btn-outline-secondary" to="/contact">
+        <Link className="btn btn-lg btn-outline-secondary" to="/contact">
           Contact Us
-        </NavLink>
+        </Link>
       </div>
     </div>
   );

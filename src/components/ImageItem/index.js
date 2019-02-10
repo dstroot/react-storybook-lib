@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import arrow4 from "./media/download-arrow.svg";
 
+// Styles
+import "./styles.scss";
+
 const ImageItem = ({ image }) => {
   const [visible, setVisible] = useState(false);
 

@@ -1,10 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import ContactUs from "../ContactUs";
 
-describe("ContactUs", () => {
+import Navigation from "../Navigation";
+
+describe("Navigation", () => {
   it("it should render", () => {
-    const component = renderer.create(<ContactUs />);
+    const component = renderer.create(<Navigation />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

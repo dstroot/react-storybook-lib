@@ -1,52 +1,51 @@
 import React from "react";
-import "./styles.scss";
 
 // from https://www.gitprime.com/
 
-const style = {
-  background: "transparent",
-  height: "100vh",
-  width: "100vw",
-  url:
-    "(//images.ctfassets.net/uw229zq1tzc4/6mhWavUAFUGrfKwkylCPqM/c2dcbb66c2959c1fe8164cf779d3302b/home-hero-poster-image.jpg) no-repeat 0 0"
-};
-
-const opacity = {
-  opacity: "1",
-  transform: "translate3d(0px, 0%, 0px)"
-};
-
-const divHero = {
-  /* Image with a color wash */
-  // backgroundImage: `linear-gradient(to top, rgba(0, 142, 215, 0.9), rgba(0, 142, 215, 0.4)), url(${bgimage})`,
-
-  /* Set height relative to width */
-  height: "40vw",
-  minHeight: "225px",
-
-  /* Position and center the image to scale nicely on all screens */
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  position: "relative"
-};
-
-// place the text on the hero image - center text, viewport wide, at the bottom
-const heroText = {
-  textAlign: "center",
-  position: "absolute",
-  bottom: "5vw",
-  width: "100vw",
-  color: "white"
-};
-
 const HeroVideo = () => {
+  const style = {
+    background: "transparent",
+    height: "100vh",
+    width: "100vw",
+    url:
+      "(//images.ctfassets.net/uw229zq1tzc4/6mhWavUAFUGrfKwkylCPqM/c2dcbb66c2959c1fe8164cf779d3302b/home-hero-poster-image.jpg) no-repeat 0 0"
+  };
+
+  const opacity = {
+    opacity: "1",
+    transform: "translate3d(0px, 0%, 0px)"
+  };
+
+  const divHero = {
+    /* Image with a color wash */
+    // backgroundImage: `linear-gradient(to top, rgba(0, 142, 215, 0.9), rgba(0, 142, 215, 0.4)), url(${bgimage})`,
+
+    /* Set height relative to width */
+    height: "40vw",
+    minHeight: "225px",
+
+    /* Position and center the image to scale nicely on all screens */
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    position: "relative"
+  };
+
+  // place the text on the hero image - center text, viewport wide, at the bottom
+  const heroText = {
+    textAlign: "center",
+    position: "absolute",
+    bottom: "5vw",
+    width: "100vw",
+    color: "white"
+  };
+
   return (
     <div style={divHero}>
       <video
         className="bg-black"
         loop=""
-        autoplay=""
+        autoPlay=""
         async=""
         muted=""
         poster="data:image/gif,AAAA"
@@ -83,7 +82,7 @@ const HeroVideo = () => {
             <div style={opacity}>
               <div className="inline-flex flex-column items-start flex-row-ns items-center-ns">
                 <a
-                  className="Button__StyledButton-sc-1idqtbc-0 calibre-semi-bold items-center justify-center Button__OutlineButton-sc-1idqtbc-1 kapTDN"
+                  className="calibre-semi-bold items-center justify-center Button__OutlineButton-sc-1idqtbc-1 kapTDN"
                   theme="outline-white"
                   href="/signup/"
                 >
@@ -103,9 +102,9 @@ const HeroVideo = () => {
                     >
                       <path
                         fill="none"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         stroke="#FFF"
-                        stroke-width="2"
+                        strokeWidth="2"
                         d="M1 1l5 4.5L1 10"
                         style={{ transition: "stroke 350ms ease" }}
                       />

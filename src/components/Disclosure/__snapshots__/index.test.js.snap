@@ -2,27 +2,31 @@
 
 exports[`Disclosure it should render 1`] = `
 <div
-  className="container mt-5"
+  className="row mt-3"
 >
-  <p
-    className="text-muted small"
+  <div
+    className="col"
   >
-    In order to sell life insurance, a financial professional must be a properly licensed and appointed life insurance producer.
-  </p>
-  <p
-    className="text-muted small"
-  >
-    Pacific Life refers to Pacific Life Insurance Company and its affiliates, including Pacific Life & Annuity Company. Insurance products are issued by Pacific Life Insurance Company in all states except New York and in New York by Pacific Life & Annuity Company. Product availability and features may vary by state. Each insurance company is solely responsible for the financial obligations accruing under the products it issues.
-  </p>
-  <p
-    className="text-muted small"
-  >
-    Life insurance sales rankings from LIMRA, 2017 Confidential Annual Sales Survey of Participating Companies. Sales rankings for Pacific Life Insurance Company are based on planned recurring premiums as measured against 83 participating companies.
-  </p>
-  <p
-    className="text-muted small"
-  >
-    Indexed Universal Life insurance does not directly participate in any stock or equity investments.
-  </p>
+    <p
+      className="text-muted small"
+    >
+      In order to sell life insurance, a financial professional must be a properly licensed and appointed life insurance producer.
+        
+      <span
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+            "fontWeight": "600",
+          }
+        }
+      >
+        [ 
+        More +
+         ]
+      </span>
+    </p>
+  </div>
 </div>
 `;

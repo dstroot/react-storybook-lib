@@ -20,7 +20,7 @@ const Disclosure = () => {
           properly licensed and appointed life insurance producer.
           {"  "}
           <span className="" style={style} onClick={toggle}>
-            [ More {show ? "-" : "+"} ]
+            [ {show ? "Less -" : "More +"} ]
           </span>
         </p>
         {show ? (

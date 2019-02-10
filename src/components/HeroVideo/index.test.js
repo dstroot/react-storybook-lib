@@ -22,12 +22,12 @@ describe("HeroVideo", () => {
     expect(tree.toJSON()).toMatchSnapshot();
   });
 
-  it("it should say Boom!", () => {
+  it("it should say Engineers", () => {
     const h1 = getMountedComponent()
       .find("h1")
       .first();
 
-    expect(h1.text()).toContain("Boom!");
+    expect(h1.text()).toContain("Engineers");
   });
 });
 
