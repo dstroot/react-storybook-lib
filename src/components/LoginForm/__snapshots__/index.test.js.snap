@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm it should render 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-4 d-flex flex-column"
+    >
+      <form
+        className="mt-auto mb-5"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            aria-describedby="emailHelp"
+            className="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+            type="email"
+          />
+          <small
+            className="form-text text-muted"
+            id="emailHelp"
+          >
+            We'll never share your email with anyone else.
+          </small>
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="password"
+            name="password"
+            onChange={[Function]}
+            placeholder="Password"
+            type="password"
+          />
+          <small
+            className="form-text text-muted"
+          >
+            
+          </small>
+          <small
+            className="form-text text-danger"
+          >
+            <div>
+              Loading...
+            </div>
+          </small>
+        </div>
+        <button
+          className="btn btn-primary"
+          type="submit"
+        >
+          Submit
+        </button>
+        <small
+          className="mt-3 form-text"
+        >
+          Need to
+           
+          <strong>
+            <a
+              href="/"
+            >
+              sign up?
+            </a>
+          </strong>
+        </small>
+      </form>
+    </div>
+    <div
+      className="col-md-8"
+    >
+      <div
+        className="canvas-wrap"
+      >
+        <canvas />
+      </div>
+    </div>
+  </div>
+</div>
+`;

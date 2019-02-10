@@ -1,0 +1,12 @@
+// Theming bootstrap
+// https://getbootstrap.com/docs/4.0/getting-started/theming/
+
+// To modify an existing color in our $theme-colors map
+// To add a new color to $theme-colors, add the new key and value:
+$theme-colors: (
+  "primary": #9966ff,
+  // #007cbd meets accessibility contrast ratio,
+);
+
+// then import Bootstrap
+@import "bootstrap";

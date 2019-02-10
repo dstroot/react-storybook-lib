@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageDisplay renders some content 1`] = `
+<div
+  className="grid-container"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="border height-two background col-md-6 col-xs-6"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "url(1.jpg)",
+          }
+        }
+      />
+      <div
+        className="border height-two background col-md-6 col-xs-6"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "url(2.jpg)",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="border height-three background col-md-4 col-xs-6"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "url(3.jpg)",
+          }
+        }
+      />
+      <div
+        className="border height-three background col-md-4 col-xs-6"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "url(4.webp)",
+          }
+        }
+      />
+      <div
+        className="border height-three background col-md-4 col-xs-6"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "url(5.webp)",
+          }
+        }
+      >
+        <div
+          className="cover"
+        />
+        <div
+          className="cover-text"
+          style={
+            Object {
+              "fontSize": "200%",
+            }
+          }
+        >
+          <p>
+            +
+            4
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

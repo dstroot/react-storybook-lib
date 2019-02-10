@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IdealImage it should render 1`] = `
+<div
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  style={
+    Object {
+      "backgroundColor": "",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "cover",
+      "position": "relative",
+    }
+  }
+>
+  <svg
+    height={2095}
+    style={
+      Object {
+        "height": "auto",
+        "marginBottom": "-4px",
+        "maxWidth": "100%",
+        "width": "100%",
+      }
+    }
+    width={3500}
+  />
+</div>
+`;

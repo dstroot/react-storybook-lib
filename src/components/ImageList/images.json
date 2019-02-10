@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "date": "11-14-18",
+    "full": "/media/wildfire.jpg",
+    "thumb": "/media/wildfire.jpg",
+    "title": "California Wildfire",
+    "caption": "",
+    "alt": "wildfire",
+    "description": "Pacific Life Foundation Donates $250,000 to the American Red Cross for Victims of the California Wildfires",
+    "category": "Logos"
+  },
+  {
+    "id": "2",
+    "date": "11-14-18",
+    "alt": "students",
+    "full": "/media/students.jpg",
+    "thumb": "/media/students.jpg",
+    "title": "Students",
+    "description": "Pacific Life Foundation Donates $250,000 to the American Red Cross for Victims of the California Wildfires",
+    "category": "Logos"
+  },
+  {
+    "id": "3",
+    "date": "11-14-18",
+    "alt": "awards",
+    "full": "/media/awards.jpg",
+    "thumb": "/media/awards.jpg",
+    "title": "Awards",
+    "description": "Pacific Life Foundation Donates $250,000 to the American Red Cross for Victims of the California Wildfires",
+    "category": "Logos"
+  }
+]

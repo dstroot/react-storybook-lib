@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FetchHooks it should render 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form-inline mt-5"
+    onSubmit={[Function]}
+  >
+    <label
+      className="sr-only"
+      for="query"
+    >
+      Query
+    </label>
+    <input
+      class="form-control mb-2 mr-sm-2"
+      id="query"
+      onChange={[Function]}
+      placeholder="redux"
+      type="text"
+    />
+    <button
+      className="btn btn-primary mb-2"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <ul />
+</div>
+`;

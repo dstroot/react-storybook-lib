@@ -1,0 +1,48 @@
+/* The image box */
+.img-box {
+  position: relative;
+  height: 425px;
+}
+
+/* Place text on the image */
+.img-box-text {
+  max-width: 650px;
+  position: absolute;
+  text-align: center;
+  margin: 10%;
+  margin-top: 30%;
+}
+@media (min-width: 768px) {
+  .img-box-text {
+    margin-left: 50%;
+    margin-top: 15%;
+    max-width: 550px;
+    position: absolute;
+    text-align: left;
+  }
+}
+
+.img-box-content {
+  font-size: calc(10px + 0.5vw + 0.5vh + 0.25vmin);
+}
+
+// darken on rollover
+.img-box:hover .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 142, 215, 0.6);
+  transition: 0.5s ease;
+}
+
+// images and info
+// ----------------
+// https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=en-US
+// http://unsplash.it/1200x800
+// ----------------
+// https://www.google.com/intl/en/about/
+// https://www.w3schools.com/css/css3_backgrounds.asp

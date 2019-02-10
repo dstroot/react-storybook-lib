@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageList it should render 1`] = `
+<div
+  className="container mt-3"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h1
+        className="display-6 mb-2 mt-4"
+      >
+        All Logos
+      </h1>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-4 mt-4"
+    >
+      <img
+        alt="wildfire"
+        className="img-fluid link"
+        height="400px"
+        onClick={[Function]}
+        src="/media/wildfire.jpg"
+        width="400px"
+      />
+      <br />
+      <p
+        className="lead d-inline"
+      >
+        <a
+          aria-label="Download Google"
+          className=""
+          download={true}
+          href="/media/wildfire.jpg"
+        >
+          <img
+            alt="arrow"
+            className="mr-2"
+            src="download-arrow.svg"
+            width="18px"
+          />
+        </a>
+        California Wildfire
+      </p>
+    </div>
+    <div
+      className="col-sm-4 mt-4"
+    >
+      <img
+        alt="students"
+        className="img-fluid link"
+        height="400px"
+        onClick={[Function]}
+        src="/media/students.jpg"
+        width="400px"
+      />
+      <br />
+      <p
+        className="lead d-inline"
+      >
+        <a
+          aria-label="Download Google"
+          className=""
+          download={true}
+          href="/media/students.jpg"
+        >
+          <img
+            alt="arrow"
+            className="mr-2"
+            src="download-arrow.svg"
+            width="18px"
+          />
+        </a>
+        Students
+      </p>
+    </div>
+    <div
+      className="col-sm-4 mt-4"
+    >
+      <img
+        alt="awards"
+        className="img-fluid link"
+        height="400px"
+        onClick={[Function]}
+        src="/media/awards.jpg"
+        width="400px"
+      />
+      <br />
+      <p
+        className="lead d-inline"
+      >
+        <a
+          aria-label="Download Google"
+          className=""
+          download={true}
+          href="/media/awards.jpg"
+        >
+          <img
+            alt="arrow"
+            className="mr-2"
+            src="download-arrow.svg"
+            width="18px"
+          />
+        </a>
+        Awards
+      </p>
+    </div>
+  </div>
+  <p
+    className="small text-muted mt-4"
+  >
+    Images on this page may be used for publication with credit: "Source: Pacific Life."
+  </p>
+</div>
+`;

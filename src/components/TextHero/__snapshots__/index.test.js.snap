@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextHero it should render 1`] = `
+<div
+  className="container-fluid mt-5 mb-5"
+>
+  <div
+    className="row justify-content-center"
+  >
+    <div
+      className="col-8"
+    >
+      <div
+        className="text-center mx-auto"
+      >
+        <h1
+          className="display-4"
+        >
+          
+        </h1>
+        <p
+          className="lead"
+        >
+          
+        </p>
+        <a
+          className="btn btn-primary"
+          target="_self"
+        >
+          WE CAN HELP
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarketingSection it should render 1`] = `
+<div
+  className="bg-primary text-center text-white"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row text-uppercase"
+    >
+      <div
+        className="col"
+      >
+        <div
+          className="svg-container mx-auto mt-4 w-50 p-3"
+        >
+          <img
+            alt="money"
+            src="money.svg"
+          />
+        </div>
+        <h5
+          className="mt-1 p-3"
+        >
+          Save enough money to meet my needs.
+        </h5>
+      </div>
+      <div
+        className="col"
+      >
+        <div
+          className="svg-container mx-auto mt-4 w-50 p-3"
+        >
+          <img
+            alt="family"
+            src="family.svg"
+          />
+        </div>
+        <h5
+          className="mt-1 p-3"
+        >
+          Ensure my family is protected.
+        </h5>
+      </div>
+      <div
+        className="w-100 d-md-none"
+      />
+      <div
+        className="col"
+      >
+        <div
+          className="svg-container mx-auto mt-4 w-50 p-3"
+        >
+          <img
+            alt="time"
+            src="time.svg"
+          />
+        </div>
+        <h5
+          className="mt-1 p-3"
+        >
+          Make sure I don't run out of money.
+        </h5>
+      </div>
+      <div
+        className="col"
+      >
+        <div
+          className="svg-container mx-auto mt-4 w-50 p-3"
+        >
+          <img
+            alt="business"
+            src="business.svg"
+          />
+        </div>
+        <h5
+          className="mt-1 p-3"
+        >
+          Protect and plan for my business.
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+`;

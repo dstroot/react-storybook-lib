@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroBlue renders some content 1`] = `
+Array [
+  <div
+    className="hero text-white"
+    style={
+      Object {
+        "backgroundImage": "url(startup.jpg)",
+        "backgroundPosition": "center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "maxHeight": "50vh",
+        "position": "relative",
+      }
+    }
+  />,
+  <div
+    className="row"
+    style={
+      Object {
+        "marginTop": "-12vh",
+      }
+    }
+  >
+    <div
+      className="col-md-10 offset-md-1 p-3 text-center text-white bg-primary"
+    >
+      <p
+        style={
+          Object {
+            "fontSize": "calc(44px + 1.5vw + 0.5vmin)",
+            "fontWeight": "300",
+            "lineHeight": "1.2",
+          }
+        }
+      >
+        
+      </p>
+      <p
+        style={
+          Object {
+            "fontSize": "calc(20px + 1.5vw + 0.5vmin)",
+            "fontWeight": "300",
+            "lineHeight": "1.2",
+          }
+        }
+      >
+        
+      </p>
+    </div>
+  </div>,
+]
+`;

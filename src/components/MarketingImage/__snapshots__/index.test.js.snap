@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarketingBing it should render 1`] = `
+<a
+  href="/"
+>
+  <div
+    className="img-box mt-3"
+    style={
+      Object {
+        "background": "url(/media/1.jpg) left top no-repeat",
+        "backgroundSize": "cover",
+      }
+    }
+  >
+    <div
+      className="overlay"
+    >
+      <div
+        className="img-box-text text-white"
+      >
+        <h3
+          className="text-uppercase"
+        >
+          Our Commitments
+        </h3>
+        <p
+          className="img-box-content"
+        >
+          We are dedicated to creating opportunity for everyone
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+`;

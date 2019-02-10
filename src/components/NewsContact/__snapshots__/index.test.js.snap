@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsContact it should render 1`] = `
+<div
+  className="media border mb-5"
+>
+  <img
+    alt="Contact"
+    className="align-self-center rounded-circle m-3"
+    height="100"
+    src="jesse-sq.jpg"
+  />
+  <div
+    className="media-body mt-3"
+  >
+    <address
+      className="mr-3"
+    >
+      <strong>
+        Media Contact
+      </strong>
+      <br />
+      <span
+        className="lead"
+      >
+        Jesse Page
+      </span>
+      <br />
+      <a
+        className="card-link"
+        href="mailto:jpage@pacificlife.com?Subject=Media%20Inquiry"
+        target="_top"
+      >
+        jpage@pacificlife.com
+      </a>
+      <br />
+      <a
+        className="card-link"
+        href="tel:+19492194575"
+      >
+        (949) 219-4575
+      </a>
+    </address>
+  </div>
+</div>
+`;

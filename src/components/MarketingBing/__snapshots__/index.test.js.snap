@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarketingBing it should render 1`] = `
+<a
+  href="/"
+>
+  <div
+    className="image-box mt-5"
+    style={
+      Object {
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url('https://bing.biturl.top/?resolution=1920&format=image&index=1&mkt=en-US')
+        center center no-repeat",
+        "backgroundSize": "cover",
+      }
+    }
+  >
+    <div
+      className="overlay"
+    >
+      <div
+        className="image-box-text text-white"
+      >
+        <p
+          className="lead text-uppercase"
+        >
+          Our Commitments
+        </p>
+        <h3
+          data-unite-orphan=""
+        >
+          We are dedicated to creating opportunity for everyone
+        </h3>
+        <p
+          className="mt-4"
+        >
+          How we contribute
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+`;

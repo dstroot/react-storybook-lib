@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderMarkdown it should render 1`] = `
+<div
+  className="container mt-5"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12"
+    >
+      <h2>
+        HTML block below
+      </h2>
+      &lt;blockquote&gt;
+  This blockquote will change based on the HTML settings above.
+&lt;/blockquote&gt;
+      <h2>
+        How about some code?
+      </h2>
+      <p>
+        Pretty neat, eh?
+      </p>
+    </div>
+  </div>
+</div>
+`;

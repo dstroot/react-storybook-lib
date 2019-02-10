@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`API has not changed 1`] = `
+Object {
+  "climate": "murky",
+  "created": "2014-12-10T11:42:22.590000Z",
+  "diameter": "8900",
+  "edited": "2014-12-20T20:58:18.425000Z",
+  "films": Array [
+    "https://www.swapi.co/api/films/2/",
+    "https://www.swapi.co/api/films/6/",
+    "https://www.swapi.co/api/films/3/",
+  ],
+  "gravity": "N/A",
+  "name": "Dagobah",
+  "orbital_period": "341",
+  "population": "unknown",
+  "residents": Array [],
+  "rotation_period": "23",
+  "surface_water": "8",
+  "terrain": "swamp, jungles",
+  "url": "https://www.swapi.co/api/planets/5/",
+}
+`;
+
+exports[`PlanetView it should render 1`] = `
+<div
+  className="text-danger"
+>
+  Something went wrong! Please try again.
+</div>
+`;

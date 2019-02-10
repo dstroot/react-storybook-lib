@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FetchDemo renders it should render 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h1>
+        /r/reactjs
+      </h1>
+      <div
+        className="text-muted"
+      >
+        Loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FetchDemo renders renders the error state 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h1>
+        /r/reactjs
+      </h1>
+      <div
+        className="text-danger"
+      >
+        Something went wrong: 
+        oops
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FetchDemo renders renders the loading state 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h1>
+        /r/reactjs
+      </h1>
+      <div
+        className="text-muted"
+      >
+        Loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FetchDemo renders renders the posts 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h1>
+        /r/reactjs
+      </h1>
+      <table
+        className="table"
+      >
+        <tbody>
+          <tr
+            key="1"
+          >
+            <td>
+              <span
+                className="badge badge-pill badge-primary"
+              >
+                3
+              </span>
+            </td>
+            <td>
+              Best Post Ever
+            </td>
+          </tr>
+          <tr
+            key="2"
+          >
+            <td>
+              <span
+                className="badge badge-pill badge-primary"
+              >
+                17
+              </span>
+            </td>
+            <td>
+              Second Best Post Ever
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`fetching data re-renders with an error 1`] = `
+<FetchDemo
+  subreddit="reactjs"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <h1>
+          /r/reactjs
+        </h1>
+        <div
+          className="text-muted"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+</FetchDemo>
+`;
+
+exports[`fetching data re-renders with an error 2`] = `
+<FetchDemo
+  subreddit="reactjs"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <h1>
+          /r/reactjs
+        </h1>
+        <div
+          className="text-muted"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+</FetchDemo>
+`;
+
+exports[`fetching data re-renders with the data 1`] = `
+<FetchDemo
+  subreddit="reactjs"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <h1>
+          /r/reactjs
+        </h1>
+        <div
+          className="text-muted"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+</FetchDemo>
+`;
+
+exports[`fetching data re-renders with the data 2`] = `
+<FetchDemo
+  subreddit="reactjs"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <h1>
+          /r/reactjs
+        </h1>
+        <div
+          className="text-muted"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+</FetchDemo>
+`;

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsItem it should render 1`] = `
+Array [
+  <a
+    className="news-link"
+    href="https://www.pacificlife.com/press-releases/pacific-life-foundation-donates--250-000-to-the-american-red-cro.html"
+  >
+    <div
+      className="media"
+    >
+      <img
+        alt="Generic placeholder"
+        className="mr-3 d-none d-sm-block"
+        height="115px"
+        src="logo.png"
+        width="175px"
+      />
+      <div
+        className="media-body"
+      >
+        <p
+          className="mt-0 text-muted"
+        >
+          11-14-18
+           / 
+          <strong>
+            Company News
+          </strong>
+        </p>
+        <p
+          style={
+            Object {
+              "fontSize": "calc(14px + 1vw + 0.25vmin)",
+              "fontWeight": "300",
+              "lineHeight": "1.1",
+              "marginBottom": "0",
+            }
+          }
+        >
+          Pacific Life Foundation Donates $250,000 to the American Red Cross for Victims of the California Wildfires
+        </p>
+      </div>
+    </div>
+  </a>,
+  <hr />,
+]
+`;

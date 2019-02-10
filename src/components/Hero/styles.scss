@@ -1,0 +1,25 @@
+.hero {
+  width: 100%;
+  // padding: 60px 30px;
+
+  /* Set a specific min height */
+  height: 60vw;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  // .color-wash {
+  //   /* Set a specific min height */
+  //   min-height: 60vh;
+  //   max-height: 80vh;
+  //   /* color overlay */
+  //   background-color: rgba(0, 0, 0, 0.5);
+  // }
+}
+
+.bg-shade {
+  background-color: rgba(0, 0, 0, 0.5);
+}
