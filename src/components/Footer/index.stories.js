@@ -7,7 +7,6 @@ import Footer from "../Footer";
 // Footer section
 storiesOf("Footer", module)
   .addParameters({
-    // default for all stories in this book
     info: {
       inline: true,
       header: false,
