@@ -26,8 +26,11 @@ const TextHero = ({ heading, text, link }) => {
 };
 
 TextHero.propTypes = {
+  /** Large heading text */
   heading: PropTypes.string,
+  /** Other text */
   text: PropTypes.string,
+  /** CTA link for button */
   link: PropTypes.string
 };
 

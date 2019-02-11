@@ -46,10 +46,6 @@ const HeroVideo = () => {
     transform: `translate(0px, -50%)`
   };
 
-  {
-    /* <video class="bg-black HomepageHero__Video-nd7a3l-0 hnBYld" loop="" autoplay="" async="" muted="" poster="data:image/gif,AAAA" style="background:transparent url(//images.ctfassets.net/uw229zq1tzc4/6mhWavUAFUGrfKwkylCPqM/c2dcbb66c2959c1fe8164cf779d3302b/home-hero-poster-image.jpg) no-repeat 0 0"><source src="//videos.ctfassets.net/uw229zq1tzc4/3CYVQZf6e4EyACIEEKOaio/867dda9b5beb1b7d8f1c34261029b02a/HiRes_CC_Text_Removed.mp4" type="video/mp4"></video> */
-  }
-
   return (
     <div style={divHero}>
       <video
