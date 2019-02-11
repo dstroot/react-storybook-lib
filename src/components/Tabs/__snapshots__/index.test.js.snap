@@ -36,7 +36,9 @@ Array [
       </div>
     </li>
   </ul>,
-  <div>
+  <div
+    className="display-3"
+  >
     Tab 1
   </div>,
 ]
