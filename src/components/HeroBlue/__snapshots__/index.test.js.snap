@@ -11,6 +11,7 @@ Array [
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
         "maxHeight": "50vh",
+        "minHeight": "40vw",
         "position": "relative",
       }
     }
@@ -35,7 +36,7 @@ Array [
           }
         }
       >
-        
+        It's Miller Time!
       </p>
       <p
         style={

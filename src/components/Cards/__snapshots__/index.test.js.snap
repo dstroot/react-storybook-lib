@@ -55,12 +55,12 @@ exports[`Cards it should render 1`] = `
           <div
             className="d-inline p-2"
           >
-            <img
-              alt="clock"
+            <svg
               height="15px"
-              src="clock.svg"
               width="15px"
-            />
+            >
+              clock.svg
+            </svg>
             <strong
               className="align-middle"
             >
@@ -106,12 +106,12 @@ exports[`Cards it should render 1`] = `
           <div
             className="d-inline p-2"
           >
-            <img
-              alt="clock"
+            <svg
               height="15px"
-              src="clock.svg"
               width="15px"
-            />
+            >
+              clock.svg
+            </svg>
             <strong
               className="align-middle"
             >
@@ -157,12 +157,12 @@ exports[`Cards it should render 1`] = `
           <div
             className="d-inline p-2"
           >
-            <img
-              alt="clock"
+            <svg
               height="15px"
-              src="clock.svg"
               width="15px"
-            />
+            >
+              clock.svg
+            </svg>
             <strong
               className="align-middle"
             >

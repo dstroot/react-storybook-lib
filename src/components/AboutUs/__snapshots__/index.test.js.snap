@@ -14,11 +14,11 @@ Array [
         <div
           className="card-body"
         >
-          <h1
-            className="display-3 text-primary"
+          <p
+            className="display-4 text-primary"
           >
             <span />
-          </h1>
+          </p>
           <h3>
             Year History
           </h3>
@@ -35,11 +35,11 @@ Array [
         <div
           className="card-body"
         >
-          <h1
-            className="display-3 text-primary"
+          <p
+            className="display-4 text-primary"
           >
             <span />
-          </h1>
+          </p>
           <h3>
             In Assets
           </h3>
@@ -56,11 +56,11 @@ Array [
         <div
           className="card-body"
         >
-          <h1
-            className="display-3 text-primary"
+          <p
+            className="display-4 text-primary"
           >
             <span />
-          </h1>
+          </p>
           <h3>
             In Donations
           </h3>
@@ -85,11 +85,18 @@ Array [
         <div
           className="col"
         >
-          <h1
-            className="display-4 text-uppercase"
+          <p
+            className="text-uppercase"
+            style={
+              Object {
+                "fontSize": "calc(26px + 1.5vw + 0.5vmin)",
+                "fontWeight": "300",
+                "lineHeight": "1.2",
+              }
+            }
           >
-            Power of Pacific Life
-          </h1>
+            The Power of Pacific Life
+          </p>
           <p
             className="lead"
           >
@@ -111,11 +118,17 @@ Array [
         <div
           className=""
         >
-          <h1
-            className="display-4"
+          <p
+            style={
+              Object {
+                "fontSize": "calc(26px + 1.5vw + 0.5vmin)",
+                "fontWeight": "300",
+                "lineHeight": "1.2",
+              }
+            }
           >
             Our Financial Strength
-          </h1>
+          </p>
           <p
             className="lead"
           >
@@ -166,11 +179,17 @@ Array [
         <div
           className=""
         >
-          <h1
-            className="display-4"
+          <p
+            style={
+              Object {
+                "fontSize": "calc(26px + 1.5vw + 0.5vmin)",
+                "fontWeight": "300",
+                "lineHeight": "1.2",
+              }
+            }
           >
             Our Corporate Responsibility
-          </h1>
+          </p>
           <p
             className="lead"
           >
