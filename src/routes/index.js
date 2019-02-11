@@ -1,5 +1,6 @@
 import React from "react";
 import { Router } from "@reach/router";
+import FourOhFour from "../components/FourOhFour";
 
 // create a component that wraps a component and adds the path property
 const Route = ({ component: Component, ...rest }) => <Component {...rest} />;
@@ -10,6 +11,7 @@ const Routes = ({ data }) => (
     {data.map((item, index) => (
       <Route key={index} path={item.path} component={item.component} />
     ))}
+    <FourOhFour default />
   </Router>
 );
 
