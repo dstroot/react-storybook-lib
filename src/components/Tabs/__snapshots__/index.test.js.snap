@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs it should render 1`] = `
+Array [
+  <ul
+    className="nav nav-tabs nav-fill mb-4"
+  >
+    <li
+      className="nav-item"
+    >
+      <div
+        className="nav-link active"
+        onClick={[Function]}
+      >
+        News Stories
+      </div>
+    </li>
+    <li
+      className="nav-item"
+    >
+      <div
+        className="nav-link false"
+        onClick={[Function]}
+      >
+        Images and Video
+      </div>
+    </li>
+    <li
+      className="nav-item"
+    >
+      <div
+        className="nav-link false"
+        onClick={[Function]}
+      >
+        Contact Us
+      </div>
+    </li>
+  </ul>,
+  <div>
+    Tab 1
+  </div>,
+]
+`;

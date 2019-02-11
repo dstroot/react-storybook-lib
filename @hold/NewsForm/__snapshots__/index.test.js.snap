@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsForm renders some content 1`] = `
+Array [
+  <h3
+    className="mt-3 font-weight-light"
+  >
+    News Story:
+  </h3>,
+  <form
+    className=""
+    noValidate={true}
+    onSubmit={[Function]}
+  >
+    <fieldset
+      aria-busy={false}
+      disabled={false}
+    >
+      <div
+        className="form-row align-items-center"
+      >
+        <div
+          className="form-group col-md-6"
+        >
+          <label
+            htmlFor="date"
+          >
+            Date
+          </label>
+          <input
+            className="form-control"
+            name="datetime"
+            onChange={[Function]}
+            required={true}
+            type="date"
+            value="Dec 25, 2018"
+          />
+          <div
+            className="invalid-feedback"
+          >
+            Please enter a date.
+          </div>
+          <div
+            className="valid-feedback"
+          >
+            Looks good!
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-group form-check col-md-6"
+      >
+        <input
+          className="form-check-input"
+          name="draft"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="draft"
+        >
+          Draft
+        </label>
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="headline"
+        >
+          Headline
+        </label>
+        <textarea
+          className="form-control"
+          name="headline"
+          onChange={[Function]}
+          placeholder="Please enter a headline"
+          required={true}
+          type="text"
+          value="Headline"
+        />
+        <div
+          className="invalid-feedback"
+        >
+          Please enter a headline.
+        </div>
+        <div
+          className="valid-feedback"
+        >
+          Looks good!
+        </div>
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="cutline"
+        >
+          Cutline
+        </label>
+        <textarea
+          className="form-control"
+          name="cutline"
+          onChange={[Function]}
+          placeholder="Please enter a cutline"
+          required={true}
+          value="cutline"
+        />
+        <div
+          className="invalid-feedback"
+        >
+          Please enter some text.
+        </div>
+        <div
+          className="valid-feedback"
+        >
+          Looks good!
+        </div>
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="story"
+        >
+          Story
+        </label>
+        <textarea
+          className="form-control"
+          name="story"
+          onChange={[Function]}
+          placeholder="Please enter a story"
+          required={true}
+          rows={10}
+          value="story"
+        />
+        <div
+          className="invalid-feedback"
+        >
+          Please enter some text.
+        </div>
+        <div
+          className="valid-feedback"
+        >
+          Looks good!
+        </div>
+      </div>
+      <div
+        className="form-row align-items-center"
+      >
+        <div
+          className="form-group col-md-6"
+        >
+          <label
+            htmlFor="category"
+          >
+            Category
+          </label>
+          <select
+            className="form-control"
+            name="category"
+            onChange={[Function]}
+            value="Company News"
+          >
+            <option
+              category="Company News"
+            >
+              Company News
+            </option>
+            <option
+              category="Movers and Shakers"
+            >
+              Movers and Shakers
+            </option>
+            <option
+              category="Product News"
+            >
+              Product News
+            </option>
+          </select>
+          <div
+            className="invalid-feedback"
+          >
+            Please select one.
+          </div>
+          <div
+            className="valid-feedback"
+          >
+            Looks good!
+          </div>
+        </div>
+        <div
+          className="form-group col-md-6"
+        >
+          <label
+            htmlFor="image"
+          >
+            image
+          </label>
+          <input
+            className="form-control"
+            name="image"
+            onChange={[Function]}
+            placeholder="Please enter the image URL"
+            type="text"
+            value="Image"
+          />
+          <div
+            className="invalid-feedback"
+          >
+            Please enter the URL.
+          </div>
+          <div
+            className="valid-feedback"
+          >
+            Looks good!
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      className="form-row justify-content-between mt-3"
+    >
+      <div
+        className="col-md-5"
+      >
+        <a
+          className="btn btn-block btn-secondary"
+          href="/news/edit"
+          onClick={[Function]}
+        >
+          Cancel
+        </a>
+      </div>
+      <div
+        className="col-md-5"
+      >
+        <button
+          className="btn btn-block btn-primary"
+          type="submit"
+        >
+          <i
+            className="fa"
+          />
+             
+          Submit
+        </button>
+      </div>
+    </div>
+  </form>,
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-6 offset-md-3"
+    >
+      <p
+        className="text-danger"
+      >
+        Hello
+      </p>
+    </div>
+  </div>,
+]
+`;

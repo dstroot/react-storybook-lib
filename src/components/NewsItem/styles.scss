@@ -1,0 +1,18 @@
+a.news-link {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: #008ed7;
+    border-color: #008ed7;
+  }
+}
+
+.media-body {
+  padding-left: 10px;
+  height: 115px;
+  border-left: 5px solid white;
+  transition: 0.3s;
+  &:hover {
+    border-color: #008ed7;
+  }
+}

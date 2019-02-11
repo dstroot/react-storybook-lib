@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageList it should render 1`] = `
+<div
+  className="container mt-3"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h1
+        className="display-6 mb-2 mt-4"
+      >
+        Image Library
+      </h1>
+    </div>
+  </div>
+  <div
+    className="row align-items-end"
+  >
+    <div
+      className="col-sm-4 mt-4"
+    >
+      <img
+        alt="logo"
+        className="img-fluid link"
+        onClick={[Function]}
+        src="/media/logo.png"
+      />
+      <br />
+      <p
+        className="lead d-inline"
+      >
+        <a
+          aria-label="Download Google"
+          className=""
+          download={true}
+          href="/media/logo.png"
+        >
+          <img
+            alt="arrow"
+            className="mr-2"
+            src="download-arrow.svg"
+            width="18px"
+          />
+        </a>
+        Pacific Life Logo
+      </p>
+    </div>
+    <div
+      className="col-sm-4 mt-4"
+    >
+      <img
+        alt="whale"
+        className="img-fluid link"
+        onClick={[Function]}
+        src="/media/whale1.jpg"
+      />
+      <br />
+      <p
+        className="lead d-inline"
+      >
+        <a
+          aria-label="Download Google"
+          className=""
+          download={true}
+          href="/media/whale1.jpg"
+        >
+          <img
+            alt="arrow"
+            className="mr-2"
+            src="download-arrow.svg"
+            width="18px"
+          />
+        </a>
+        Whale Breach
+      </p>
+    </div>
+    <div
+      className="col-sm-4 mt-4"
+    >
+      <img
+        alt="whale"
+        className="img-fluid link"
+        onClick={[Function]}
+        src="/media/whale2.jpg"
+      />
+      <br />
+      <p
+        className="lead d-inline"
+      >
+        <a
+          aria-label="Download Google"
+          className=""
+          download={true}
+          href="/media/whale2.jpg"
+        >
+          <img
+            alt="arrow"
+            className="mr-2"
+            src="download-arrow.svg"
+            width="18px"
+          />
+        </a>
+        Whale Breach Two
+      </p>
+    </div>
+  </div>
+  <p
+    className="small text-muted mt-4"
+  >
+    Images on this page may be used for publication with credit: "Source: Pacific Life."
+  </p>
+</div>
+`;
