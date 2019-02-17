@@ -13,16 +13,21 @@ stories
   .addParameters({
     info: {
       inline: true,
-      header: false
+      header: false,
+      text: `
+      You. Protected.
+      Our mission is protecting your financial future.
+      We’ve fulfilled that promise for 150 years.
+      `
     }
   })
   .add("show background 1", () => (
     <HeroWash
       logo={logo}
       bgimage={image}
-      tagline={text("Tagline", "You. Protected.")}
-      line1={text("Line 1", "Our mission is protecting your financial future.")}
-      line2={text("Line 2", "We’ve fulfilled that promise for 150 years.")}
+      tagline={text("Tagline", "Tagline")}
+      line1={text("Line 1", "Some additional text")}
+      line2={text("Line 2", "More additional text")}
     />
   ))
   .add("show background 2", () => (
@@ -32,8 +37,8 @@ stories
         "Background Image",
         "https://www.pacificlife.com/content/dam/paclife/crp/images/brand/Brand_hero.jpg"
       )}
-      tagline={text("Tagline", "You. Protected.")}
-      line1={text("Line 1", "Our mission is protecting your financial future.")}
-      line2={text("Line 2", "We’ve fulfilled that promise for 150 years.")}
+      tagline={text("Tagline", "Tagline")}
+      line1={text("Line 1", "Some additional text")}
+      line2={text("Line 2", "More additional text")}
     />
   ));
