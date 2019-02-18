@@ -3,16 +3,23 @@
 exports[`Video it should render 1`] = `
 <video
   autoPlay={true}
-  id="background-video"
   loop={true}
+  muted={true}
+  poster="//images.ctfassets.net/uw229zq1tzc4/6mhWavUAFUGrfKwkylCPqM/c2dcbb66c2959c1fe8164cf779d3302b/home-hero-poster-image.jpg"
   preload="auto"
+  style={
+    Object {
+      "height": "auto",
+      "width": "100vw",
+    }
+  }
 >
   <source
-    src="https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    src="//videos.ctfassets.net/uw229zq1tzc4/3CYVQZf6e4EyACIEEKOaio/867dda9b5beb1b7d8f1c34261029b02a/HiRes_CC_Text_Removed.mp4"
     type="video/webm"
   />
   <source
-    src="https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    src="//videos.ctfassets.net/uw229zq1tzc4/3CYVQZf6e4EyACIEEKOaio/867dda9b5beb1b7d8f1c34261029b02a/HiRes_CC_Text_Removed.mp4"
     type="video/mp4"
   />
   <p>

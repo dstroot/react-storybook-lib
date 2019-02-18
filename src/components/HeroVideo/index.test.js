@@ -8,7 +8,12 @@ describe("HeroVideo", () => {
   let mountedComponent;
   const getMountedComponent = () => {
     if (!mountedComponent) {
-      mountedComponent = mount(<HeroVideo />);
+      mountedComponent = mount(
+        <HeroVideo
+          videoURL="//videos.ctfassets.net/uw229zq1tzc4/3CYVQZf6e4EyACIEEKOaio/867dda9b5beb1b7d8f1c34261029b02a/HiRes_CC_Text_Removed.mp4"
+          poster="//images.ctfassets.net/uw229zq1tzc4/6mhWavUAFUGrfKwkylCPqM/c2dcbb66c2959c1fe8164cf779d3302b/home-hero-poster-image.jpg"
+        />
+      );
     }
     return mountedComponent;
   };
@@ -18,7 +23,12 @@ describe("HeroVideo", () => {
   });
 
   it("it should render", () => {
-    let tree = create(<HeroVideo />);
+    let tree = create(
+      <HeroVideo
+        videoURL="//videos.ctfassets.net/uw229zq1tzc4/3CYVQZf6e4EyACIEEKOaio/867dda9b5beb1b7d8f1c34261029b02a/HiRes_CC_Text_Removed.mp4"
+        poster="//images.ctfassets.net/uw229zq1tzc4/6mhWavUAFUGrfKwkylCPqM/c2dcbb66c2959c1fe8164cf779d3302b/home-hero-poster-image.jpg"
+      />
+    );
     expect(tree.toJSON()).toMatchSnapshot();
   });
 
