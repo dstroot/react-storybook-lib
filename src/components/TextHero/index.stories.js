@@ -1,5 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 // components
 import TextHero from "../TextHero";
@@ -12,10 +13,11 @@ storiesOf("TextHero", module)
       header: false
     }
   })
+  .addDecorator(withKnobs)
   .add("show TextHero", () => (
     <TextHero
-      heading="This is a Heading"
-      text="This is some very important marketing text..."
-      link="https://somelink"
+      heading={text("Heading", "This is a Heading")}
+      text={text("Text", "This is some very important marketing text...")}
+      link={text("Link", "https://somelink")}
     />
   ));
