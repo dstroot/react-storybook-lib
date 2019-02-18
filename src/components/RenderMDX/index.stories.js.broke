@@ -1,0 +1,26 @@
+import React from "react";
+import { storiesOf } from "@storybook/react";
+// import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
+
+// components
+import RenderMDX from "../RenderMDX";
+
+// RenderMDX section
+storiesOf("RenderMDX", module)
+  // .addDecorator(withKnobs)
+  .addParameters({
+    info: {
+      inline: true,
+      header: false,
+      text: `
+      Just install mdx.macro. It includes @mdx-js/mdx and @mdx-js/tag as dependencies.
+
+      ~~~sh
+      yarn add mdx.macro 
+      ~~~
+
+      https://mdxjs.com/getting-started/create-react-app
+      `
+    }
+  })
+  .add("show RenderMDX", () => <RenderMDX />);

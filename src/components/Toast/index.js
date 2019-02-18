@@ -1,11 +1,12 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from "react";
 
 // notificatiions
-import ReactNotification from 'react-notifications-component';
-import 'react-notifications-component/dist/theme.css';
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
+import "./styles.scss";
 
 // font awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Toast extends PureComponent {
   componentDidMount() {
@@ -29,13 +30,13 @@ class Toast extends PureComponent {
           </div>
         </div>
       ),
-      type: 'success',
-      insert: 'bottom',
-      container: 'bottom-right',
-      animationIn: ['animated', 'fadeIn'],
-      animationOut: ['animated', 'fadeOut'],
+      type: "success",
+      insert: "bottom",
+      container: "bottom-right",
+      animationIn: ["animated", "fadeIn"],
+      animationOut: ["animated", "fadeOut"],
       dismiss: { duration: 6000 },
-      dismissable: { click: true },
+      dismissable: { click: true }
     });
     // remove focus on button
     event.target.blur();

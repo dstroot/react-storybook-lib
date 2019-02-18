@@ -1,8 +1,8 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from "react";
 // import PropTypes from 'prop-types';
-import { importMDX } from 'mdx.macro';
+import { importMDX } from "mdx.macro";
 
-const Content = lazy(() => importMDX('./Content.mdx'));
+const Content = lazy(() => importMDX("./content.mdx"));
 
 const RenderMDX = () => (
   <div>
