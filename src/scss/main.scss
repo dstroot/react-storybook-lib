@@ -4,14 +4,16 @@
 // To modify an existing color in our $theme-colors map
 // To add a new color to $theme-colors, add the new key and value:
 $theme-colors: (
-  "primary": #9966ff,
-  // #007cbd meets accessibility contrast ratio,
+  'primary': #007cbd,
 );
 
+// Your variable overrides
+$enable-responsive-font-sizes: true;
+
 // then import Bootstrap
-@import "bootstrap";
+@import 'bootstrap';
 
 // then components
-@import "../components/ContactUs/styles.scss";
-@import "../components/NavBar/styles.scss";
-@import "../components/Tabs/styles.scss";
+@import '../components/ContactUs/styles.scss';
+@import '../components/NavBar/styles.scss';
+@import '../components/Tabs/styles.scss';
