@@ -22,7 +22,7 @@ const App = () => (
 );
 ```
 
-## IE 11 support :(
+#### IE 11 support :(
 
 See: https://github.com/facebook/create-react-app/tree/master/packages/react-app-polyfill
 
