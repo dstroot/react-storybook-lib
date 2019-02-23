@@ -7,13 +7,13 @@ $theme-colors: (
   'primary': #007cbd,
 );
 
-// Your variable overrides
+// variable overrides
 $enable-responsive-font-sizes: true;
 
-// then import Bootstrap
+// import Bootstrap
 @import 'bootstrap';
 
-// then components
+// then import components
 @import '../components/ContactUs/styles.scss';
 @import '../components/NavBar/styles.scss';
 @import '../components/Tabs/styles.scss';
