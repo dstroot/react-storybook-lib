@@ -1,11 +1,11 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import FetchDemo from "../FetchDemo";
+import FetchDemo from '../FetchDemo';
 
 // FetchDemo section
-storiesOf("FetchDemo", module)
+storiesOf('API|FetchDemo', module)
   .addParameters({
     // default for all stories in this book
     info: {
@@ -20,7 +20,7 @@ storiesOf("FetchDemo", module)
         ~~~js
         $ yarn add axios
         ~~~
-    `
-    }
+    `,
+    },
   })
-  .add("show FetchDemo", () => <FetchDemo subreddit="reactjs" />);
+  .add('show FetchDemo', () => <FetchDemo subreddit="reactjs" />);

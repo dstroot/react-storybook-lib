@@ -1,11 +1,11 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import FetchHooks from "../FetchHooks";
+import FetchHooks from '../FetchHooks';
 
 // FetchHooks section
-storiesOf("FetchHooks", module)
+storiesOf('API|FetchHooks', module)
   .addParameters({
     // default for all stories in this book
     info: {
@@ -13,7 +13,7 @@ storiesOf("FetchHooks", module)
       header: false,
       text: `
         Fetch data using hooks.
-      `
-    }
+      `,
+    },
   })
-  .add("show FetchHooks", () => <FetchHooks />);
+  .add('show FetchHooks', () => <FetchHooks />);

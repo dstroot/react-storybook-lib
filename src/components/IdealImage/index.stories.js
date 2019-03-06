@@ -1,11 +1,11 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // component
-import IdealImage from "../IdealImage";
+import IdealImage from '../IdealImage';
 
 // story
-storiesOf("IdealImage", module)
+storiesOf('Misc|IdealImage', module)
   .addParameters({
     info: {
       inline: true,
@@ -18,7 +18,7 @@ storiesOf("IdealImage", module)
         ~~~
 
         More info: https://github.com/stereobooster/react-ideal-image/blob/master/introduction.md
-      `
-    }
+      `,
+    },
   })
-  .add("show IdealImage with test image", () => <IdealImage />);
+  .add('show IdealImage with test image', () => <IdealImage />);

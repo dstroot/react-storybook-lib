@@ -1,18 +1,18 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import Footer from "../Footer";
+import Footer from '../Footer';
 
 // Footer section
-storiesOf("Footer", module)
+storiesOf('Pac Life|Footer', module)
   .addParameters({
     info: {
       inline: true,
       header: false,
       text: `
         A simple view-only generic component.  In the real world we would probably pass in the logo and links as props.
-      `
-    }
+      `,
+    },
   })
-  .add("show Footer", () => <Footer />);
+  .add('show Footer', () => <Footer />);

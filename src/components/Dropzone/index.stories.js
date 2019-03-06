@@ -1,12 +1,12 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import { action, configureActions } from '@storybook/addon-actions';
 
 // components
-import Dropzone from "../Dropzone";
+import Dropzone from '../Dropzone';
 
 // Dropzone section
-storiesOf("Dropzone", module)
+storiesOf('Misc|Dropzone', module)
   .addParameters({
     // default for all stories in this book
     info: {
@@ -19,7 +19,7 @@ storiesOf("Dropzone", module)
 
         - https://malcoded.com/posts/react-dropzone
         - https://upmostly.com/tutorials/react-dropzone-file-uploads-react/
-    `
-    }
+    `,
+    },
   })
-  .add("show Dropzone", () => <Dropzone onFilesAdded={action(console.log)} />);
+  .add('show Dropzone', () => <Dropzone onFilesAdded={action(console.log)} />);

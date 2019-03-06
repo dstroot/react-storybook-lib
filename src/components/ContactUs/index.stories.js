@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import ContactUs from "../ContactUs";
+import ContactUs from '../ContactUs';
 
 // ContactUs section
-storiesOf("ContactUs", module)
+storiesOf('VDS|ContactUs', module)
   .addParameters({
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show ContactUs", () => <ContactUs />);
+  .add('show ContactUs', () => <ContactUs />);

@@ -1,11 +1,11 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import CookieMessage from "../CookieMessage";
+import CookieMessage from '../CookieMessage';
 
 // CookieMessage section
-storiesOf("CookieMessage", module)
+storiesOf('Pac Life|CookieMessage', module)
   .addParameters({
     // default for all stories in this book
     info: {
@@ -13,7 +13,7 @@ storiesOf("CookieMessage", module)
       header: false,
       text: `
         Example component to show a cookie message.
-    `
-    }
+    `,
+    },
   })
-  .add("show CookieMessage", () => <CookieMessage />);
+  .add('show CookieMessage', () => <CookieMessage />);

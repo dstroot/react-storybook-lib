@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react';
 import DataVisualization from '../DataVisualization';
 
 // DataVisualization section
-storiesOf('DataVisualization', module).add('show DataVisualization', () => (
-  <DataVisualization />
-));
+storiesOf('Data|DataVisualization', module).add(
+  'show DataVisualization',
+  () => <DataVisualization />
+);

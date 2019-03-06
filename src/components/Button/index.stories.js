@@ -9,7 +9,7 @@ var divStyle = {
 };
 
 // Button section
-storiesOf('UI|Button', module)
+storiesOf('VDS|Button', module)
   .addParameters({
     // default for all stories in this book
     info: {

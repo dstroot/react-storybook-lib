@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import CardGroup from "../CardGroup";
+import CardGroup from '../CardGroup';
 
 // CardGroup section
-storiesOf("CardGroup", module)
+storiesOf('Pac Life|CardGroup', module)
   .addParameters({
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show CardGroup", () => <CardGroup />);
+  .add('show CardGroup', () => <CardGroup />);
