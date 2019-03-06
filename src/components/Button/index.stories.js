@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import Button from "../Button";
+import Button from '../Button';
 
 var divStyle = {
-  width: "200px"
+  width: '200px',
 };
 
 // Button section
-storiesOf("Button", module)
+storiesOf('UI|Button', module)
   .addParameters({
     // default for all stories in this book
     info: {
@@ -44,26 +44,28 @@ storiesOf("Button", module)
         - https://fontawesome.com/icons?d=gallery
         - https://github.com/FortAwesome/react-fontawesome
         - https://fontawesome.com/how-to-use/on-the-web/using-with/react
-        `
-    }
+        `,
+    },
   })
-  .add("show normal Button", () => (
+  .add('show normal Button', () => (
     <div style={divStyle}>
       <Button submitted={false} />
     </div>
   ))
-  .add("show submitted Button", () => (
+  .add('show submitted Button', () => (
     <div style={divStyle}>
       <Button submitted={true} success="wait" />
     </div>
   ))
-  .add("show success Button", () => (
+  .add('show success Button', () => (
     <div style={divStyle}>
-      <Button Button submitted={true} success="yes" />{" "}
+      <Button Button submitted={true} success="yes" />{' '}
     </div>
   ))
-  .add("show failed Button", () => (
+  .add('show failed Button', () => (
     <div style={divStyle}>
       <Button Button submitted={true} success="no" />
     </div>
   ));
+
+// storiesOf('UI|Widgets/Basics/Button')
