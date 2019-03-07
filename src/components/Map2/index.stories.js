@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import Map2 from "../Map2";
+import Map2 from '../Map2';
 
 // Map2 section
-storiesOf("Map2", module)
+storiesOf('Pac Life|Map2', module)
   .addParameters({
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show Map2", () => <Map2 />);
+  .add('show Map2', () => <Map2 />);

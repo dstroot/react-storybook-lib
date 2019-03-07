@@ -1,18 +1,18 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import MarketingBing from "../MarketingBing";
+import MarketingBing from '../MarketingBing';
 
 // MarketingBing section
-storiesOf("MarketingBing", module)
+storiesOf('Pac Life|MarketingBing', module)
   .addParameters({
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show MarketingBing", () => (
+  .add('show MarketingBing', () => (
     <MarketingBing
       index="0"
       lead="Our Commitments"

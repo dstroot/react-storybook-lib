@@ -26,7 +26,7 @@ library.add(faSpinner, faCheck, faCheckCircle, faExclamationTriangle);
  * STORIES
  */
 
-storiesOf('Welcome', module)
+storiesOf('@Welcome|Welcome', module)
   .addParameters({
     info: {
       disable: true,

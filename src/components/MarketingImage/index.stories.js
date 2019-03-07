@@ -1,28 +1,35 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 
 // components
-import MarketingImage from "../MarketingImage";
-// import data from "../MarketingImage/data.json";
-import image from "./media/1.jpg";
+import MarketingImage from '../MarketingImage';
+// import data from '../MarketingImage/data.json';
+import image from './media/1.jpg';
+
+const stories = storiesOf('Pac Life|MarketingImage', module);
+stories.addDecorator(withKnobs);
 
 // MarketingImage section
-storiesOf("MarketingImage", module)
+stories
   .addParameters({
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show MarketingImage", () => (
+  .add('show MarketingImage', () => (
     <MarketingImage
-      lead="Our Commitments"
-      text="We are dedicated to creating opportunity for everyone"
+      lead={text('lead', 'Our Commitments')}
+      text={text(
+        'subtext',
+        'We are dedicated to creating opportunity for everyone'
+      )}
       image={image}
       url="/"
     />
   ));
-// .add("show MarketingImage list", () =>
+// .add('show MarketingImage list', () =>
 //   data.map((record, index) => (
 //     <MarketingImage
 //       key={index}

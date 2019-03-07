@@ -1,19 +1,19 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import NewsForm from "../NewsForm";
+import NewsForm from '../NewsForm';
 
 // NewsForm section
-storiesOf("NewsForm", module)
+storiesOf('Pac Life|NewsForm', module)
   .addParameters({
     // default for all stories in this book
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show NewsForm", () => (
+  .add('show NewsForm', () => (
     <NewsForm
       valid={true}
       submitted={false}
@@ -27,7 +27,7 @@ storiesOf("NewsForm", module)
       image="Image"
     />
   ))
-  .add("show invalid NewsForm", () => (
+  .add('show invalid NewsForm', () => (
     <NewsForm
       valid={false}
       submitted={false}

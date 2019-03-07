@@ -6,6 +6,6 @@ import LoginForm from '../LoginForm';
 import picture from './media/1.jpg';
 
 // LoginForm section
-storiesOf('LoginForm', module).add('show LoginForm', () => (
+storiesOf('Misc|LoginForm', module).add('show LoginForm', () => (
   <LoginForm image={picture} />
 ));

@@ -46,6 +46,6 @@ const PHOTO_SET = [
 ];
 
 // LightboxExample section
-storiesOf('LightboxExample', module).add('show LightboxExample', () => (
+storiesOf('Misc|LightboxExample', module).add('show LightboxExample', () => (
   <LightboxExample photos={PHOTO_SET} />
 ));

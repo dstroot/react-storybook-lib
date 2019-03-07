@@ -1,24 +1,29 @@
-import React, { Suspense } from "react";
-import { storiesOf } from "@storybook/react";
+import React, { Suspense } from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 
 // components
-import Pwned from "../Pwned";
+import Pwned from '../Pwned';
+
+// stories with knobs
+const stories = storiesOf('Misc|Pwned', module);
+stories.addDecorator(withKnobs);
 
 // Pwned section
-storiesOf("Pwned", module)
+stories
   .addParameters({
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show Pwned with simple password", () => (
+  .add('show Pwned with simple password', () => (
     <Suspense fallback={<div className="text-muted">Loading...</div>}>
-      <Pwned password="1234" />
+      <Pwned password={text('Password', '1234')} />
     </Suspense>
   ))
-  .add("show Pwned with complex password", () => (
+  .add('show Pwned with complex password', () => (
     <Suspense fallback={<div className="text-muted">Loading...</div>}>
-      <Pwned password="kjshf^/@jdiIHdjhf0)" />
+      <Pwned password={text('Password', 'kjshf^/@jdiIHdjhf0')} />
     </Suspense>
   ));

@@ -1,11 +1,11 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import Toast from "../Toast";
+import Toast from '../Toast';
 
 // Toast section
-storiesOf("Toast", module)
+storiesOf('Misc|Toast', module)
   .addParameters({
     info: {
       inline: true,
@@ -16,7 +16,7 @@ storiesOf("Toast", module)
         ~~~sh
         $ yarn add react-notifications-component
         ~~~
-      `
-    }
+      `,
+    },
   })
-  .add("show Toast", () => <Toast />);
+  .add('show Toast', () => <Toast />);

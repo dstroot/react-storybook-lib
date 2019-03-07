@@ -1,16 +1,16 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import NavBar from "../NavBar";
+import NavBar from '../NavBar';
 
 const navData = [
-  { path: "/", name: "Home" },
-  { path: "/about", name: "About" }
+  { path: '/', name: 'Home' },
+  { path: '/about', name: 'About' },
 ];
 
 // NavBar section
-storiesOf("NavBar", module)
+storiesOf('Pac Life|NavBar', module)
   .addParameters({
     // default for all stories in this book
     info: {
@@ -19,7 +19,7 @@ storiesOf("NavBar", module)
       text: `
         NavBar provides a navigation component that uses "@reach/router" for links. 
         It overrides some Bootstrap styles so it's "styles.scss" needs to be imported after Bootstrap in "/scss/main.scss".
-        `
-    }
+        `,
+    },
   })
-  .add("show NavBar", () => <NavBar data={navData} />);
+  .add('show NavBar', () => <NavBar data={navData} />);

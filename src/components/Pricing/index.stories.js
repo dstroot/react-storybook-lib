@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import Pricing from "../Pricing";
+import Pricing from '../Pricing';
 
 // Pricing section
-storiesOf("Pricing", module)
+storiesOf('Misc|Pricing', module)
   .addParameters({
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show Pricing", () => <Pricing />);
+  .add('show Pricing', () => <Pricing />);

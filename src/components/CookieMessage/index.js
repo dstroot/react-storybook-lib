@@ -10,7 +10,7 @@ const CookieMessage = () => {
   if (visible) {
     return (
       <div className="fixed-bottom bg-dark">
-        <div className="container">
+        {/* <div className="container">
           <div className="row p-4">
             <div className="col-10 text-light">
               We use cookies to understand the performance of our web site,
@@ -29,9 +29,9 @@ const CookieMessage = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        {/* <table className="table table-borderless m-0">
+        <table className="table table-borderless m-0">
           <tbody>
             <tr>
               <td className="text-light">
@@ -52,7 +52,7 @@ const CookieMessage = () => {
               </td>
             </tr>
           </tbody>
-        </table> */}
+        </table>
       </div>
     );
   } else {

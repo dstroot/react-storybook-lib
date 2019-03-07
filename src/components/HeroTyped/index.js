@@ -47,7 +47,7 @@ const HeroTyped = ({ image, tagline, typed, strings }) => {
   return (
     <div style={hero}>
       <div style={textSection}>
-        {/* <p style={textBig}>{tagline}</p> */}
+        <p style={textBig}>{tagline}</p>
         <p style={textSmall}>
           {typed}{' '}
           <Typed

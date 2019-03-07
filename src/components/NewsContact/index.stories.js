@@ -1,16 +1,16 @@
-import React, { Suspense } from "react";
-import { storiesOf } from "@storybook/react";
+import React, { Suspense } from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import NewsContact from "../NewsContact";
+import NewsContact from '../NewsContact';
 
 // NewsContact section
-storiesOf("NewsContact", module)
+storiesOf('Pac Life|NewsContact', module)
   .addParameters({
     // default for all stories in this book
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show NewsContact", () => <NewsContact />);
+  .add('show NewsContact', () => <NewsContact />);

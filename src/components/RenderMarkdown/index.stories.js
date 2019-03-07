@@ -1,8 +1,8 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 // components
-import RenderMarkdown from "../RenderMarkdown";
+import RenderMarkdown from '../RenderMarkdown';
 
 const example = `## HTML block below
 
@@ -15,11 +15,11 @@ Pretty neat, eh?
 `;
 
 // RenderMarkdown section
-storiesOf("RenderMarkdown", module)
+storiesOf('Pac Life|RenderMarkdown', module)
   .addParameters({
     info: {
       inline: true,
-      header: false
-    }
+      header: false,
+    },
   })
-  .add("show RenderMarkdown", () => <RenderMarkdown markdown={example} />);
+  .add('show RenderMarkdown', () => <RenderMarkdown markdown={example} />);
