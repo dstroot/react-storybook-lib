@@ -35,7 +35,7 @@ storiesOf('Pac Life|Hero', module)
       text="Achieve your most important financial goals with Pacific Life"
     />
   ))
-  .add('show Hero image (center text)', () => (
+  .add('show Hero image (center text 1)', () => (
     <Hero
       image={image3}
       align="center"
@@ -52,7 +52,7 @@ storiesOf('Pac Life|Hero', module)
       attribution=" - Jim Morris"
     />
   ))
-  .add('show Hero image (center text', () => (
+  .add('show Hero image (center text 2', () => (
     <Hero
       image={image5}
       align="center"

@@ -29,6 +29,26 @@ window.scrollTo = jest.fn().mockImplementation(() => {
   };
 });
 
+// mock local storage
+// https://stackoverflow.com/questions/32911630/how-do-i-deal-with-localstorage-in-jest-tests
+window.localStorage = jest.fn().mockImplementation(() => {
+  var store = {};
+  return {
+    getItem: function(key) {
+      return store[key];
+    },
+    setItem: function(key, value) {
+      store[key] = value.toString();
+    },
+    clear: function() {
+      store = {};
+    },
+    removeItem: function(key) {
+      delete store[key];
+    },
+  };
+});
+
 // https://medium.com/@stipsan/testing-with-jest-15-awesome-tips-and-tricks-42150ec4c262
 
 // eslint-disable-next-line no-console
