@@ -27,4 +27,22 @@ export const shorten = (text = '', maxLength = 140) => {
   return oneTooLarge.substr(0, 140) + ellip;
 };
 
+// takes a string and returns a boolean
+export const getBool = value => {
+  if (typeof value === 'string') {
+    value = value.trim().toLowerCase();
+  }
+  switch (value) {
+    case true:
+    case 'true':
+    case 1:
+    case '1':
+    case 'on':
+    case 'yes':
+      return true;
+    default:
+      return false;
+  }
+};
+
 export default shorten;

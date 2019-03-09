@@ -1,10 +1,32 @@
 import React, { useState, useEffect } from 'react';
 
+const getBool = value => {
+  if (typeof value === 'string') {
+    value = value.trim().toLowerCase();
+  }
+  switch (value) {
+    case true:
+    case 'true':
+    case 1:
+    case '1':
+    case 'on':
+    case 'yes':
+      return true;
+    default:
+      return false;
+  }
+};
+
 const CookieMessageLS = () => {
   // get initial state from localStorage
-  const initialState = () =>
-    Boolean(localStorage.getItem('cookieMessage') || true);
-  const [visible, setVisible] = useState(initialState);
+  const initialState = () => {
+    // get value
+    let value = localStorage.getItem('cookieMessage') || 'true';
+    // convert value to boolean
+    return getBool(value);
+  };
+
+  const [visible, setVisible] = useState(initialState());
 
   useEffect(
     () => {
