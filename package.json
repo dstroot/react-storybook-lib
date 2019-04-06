@@ -16,6 +16,7 @@
     "js-sha1": "^0.6.0",
     "mdx.macro": "^0.2.8",
     "numeral": "^2.0.6",
+    "rc-slider": "^8.6.9",
     "react-countup": "^4.0.0",
     "react-fb-image-grid": "^0.1.5",
     "react-google-maps": "^9.4.5",
@@ -28,6 +29,7 @@
     "react-typed": "^1.1.0",
     "react-vis": "^1.11.6",
     "react-waypoint": "^8.1.0",
+    "recharts": "^1.5.0",
     "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
