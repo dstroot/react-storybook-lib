@@ -49,6 +49,11 @@ Button.propTypes = {
 
 const StyledButton = ({ icon, color, spin, message }) => {
   const componentClasses = ["btn", "btn-block", "btn-" + color];
+  
+  // TODO: Check out https://www.npmjs.com/package/classnames to make class names simpler
+  // This package is the official replacement for classSet, which was originally shipped in the React.js Addons bundle.
+  // One of its primary use cases is to make dynamic and conditional className props simpler to work with 
+  // (especially more so than conditional string manipulation).
 
   if (spin) {
     icon = <FontAwesomeIcon icon={icon} spin />;

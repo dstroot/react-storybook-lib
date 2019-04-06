@@ -59,12 +59,12 @@ storiesOf('VDS|Button', module)
   ))
   .add('show success Button', () => (
     <div style={divStyle}>
-      <Button Button submitted={true} success="yes" />{' '}
+      <Button submitted={true} success="yes" />{' '}
     </div>
   ))
   .add('show failed Button', () => (
     <div style={divStyle}>
-      <Button Button submitted={true} success="no" />
+      <Button submitted={true} success="no" />
     </div>
   ));
 
