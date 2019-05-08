@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "@reach/router";
-import logo from "./media/logo-horiz.svg";
+import React from 'react';
+import { Link } from '@reach/router';
+import logo from './media/logo-horiz.svg';
 
 // isCurrent - true if the location.pathname is exactly the same as the anchor’s href.
 const isActive = ({ isCurrent }) => {
   return isCurrent
-    ? { className: "active nav-link" }
-    : { className: "nav-link" };
+    ? { className: 'active nav-link' }
+    : { className: 'nav-link' };
 };
 
 // `getProps` Calls up to you to get props for the underlying anchor element.
@@ -17,15 +17,16 @@ const ExactNavLink = props => <Link getProps={isActive} {...props} />;
 NavBar provides a navigation component that uses "@reach/router" for links. 
 It overrides some Bootstrap styles so it's "styles.scss" needs to be imported after Bootstrap.
  */
+
 class NavBar extends React.Component {
   buttonRef = React.createRef();
   state = {
-    isHidden: true
+    isHidden: true,
   };
 
   toggleHidden = event => {
     this.setState({
-      isHidden: !this.state.isHidden
+      isHidden: !this.state.isHidden,
     });
     // blur the button (otherwise it stays pressed)
     this.buttonRef.current.blur();
@@ -33,13 +34,13 @@ class NavBar extends React.Component {
 
   render() {
     // hide and show classes
-    let buttonClasses = "navbar-toggler";
+    let buttonClasses = 'navbar-toggler';
     if (this.state.isHidden) {
-      buttonClasses = "navbar-toggler collapsed";
+      buttonClasses = 'navbar-toggler collapsed';
     }
-    let dropDown = "navbar-collapse collapse show";
+    let dropDown = 'navbar-collapse collapse show';
     if (this.state.isHidden) {
-      dropDown = "navbar-collapse collapse";
+      dropDown = 'navbar-collapse collapse';
     }
 
     return (
