@@ -3,26 +3,19 @@ import { validateResponse } from '../../utils/fetchUtils';
 import { formToJSONString, matchPattern } from '../../utils/formUtils';
 import Button from '../Button';
 
-// https://medium.com/@everdimension/how-to-handle-forms-with-just-react-ac066c48bd4f
-// https://developer.mozilla.org/en-US/docs/Web/API/FormData
-// https://daveceddia.com/ajax-requests-in-react/
-// https://daveceddia.com/where-initialize-state-react/
-// https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2
-
+// function to remove focus from a pushed button
 const unclick = () => {
   if (document.activeElement !== document.body) {
     document.activeElement.blur();
   }
 };
 
-/**
- * Reducer handles all state logic in one place.
- * Much easier to understand
- */
+// Reducer handles all state logic **in one place**.
+// Much easier to understand!
 const formReducer = (state, action) => {
   switch (action.type) {
     case 'invalid':
-      unclick(); // remove focus on button
+      unclick();
       return {
         ...state,
         valid: false,
@@ -35,14 +28,14 @@ const formReducer = (state, action) => {
         message: '',
       };
     case 'success':
-      unclick(); // remove focus on button
+      unclick();
       return {
         ...state,
         submitted: true,
         success: 'yes',
       };
     case 'error':
-      unclick(); // remove focus on button
+      unclick();
       return {
         ...state,
         submitted: true,
@@ -55,6 +48,7 @@ const formReducer = (state, action) => {
   return state;
 };
 
+// set initial state values
 const initialState = {
   valid: true,
   submitted: false,
@@ -62,6 +56,7 @@ const initialState = {
   message: '',
 };
 
+// our form component
 const ContactFormHooks = () => {
   const [state, dispatch] = useReducer(formReducer, initialState);
   const { valid, submitted, success, message } = state;
@@ -72,20 +67,14 @@ const ContactFormHooks = () => {
     matchPattern(event);
   };
 
+  // handle form submit
   const handleSubmit = event => {
     event.preventDefault();
-
-    // NOTE: When you add name attributes to your inputs, you add structure
-    // to your form. This structure can be serialized by the native FormData
-    // interface (basic support in all browsers and IE10+). All you do is
-    // pass in a form element (which we access via event.target) to the
-    // FormData constructor and you get a serialized interpretation of the
-    // inputs which can be sent to the server.
 
     // get form
     const form = event.target;
 
-    // check form data validity first
+    // check form data validity
     if (!form.checkValidity()) {
       dispatch({ type: 'invalid' });
       return;
@@ -210,6 +199,8 @@ const ContactFormHooks = () => {
           </div>
         </div>
       </form>
+
+      {/* Error message */}
       <div className="row">
         <div className="col-md-6 offset-md-3">
           {message ? <p className="text-danger">{message}</p> : ''}
