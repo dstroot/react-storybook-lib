@@ -1,21 +1,14 @@
 import React, { useReducer } from 'react';
 import { validateResponse } from '../../utils/fetchUtils';
-import { formToJSONString, matchPattern } from '../../utils/formUtils';
+import { formToJSONString, matchPattern, unClick } from '../../utils/formUtils';
 import Button from '../Button';
-
-// function to remove focus from a pushed button
-const unclick = () => {
-  if (document.activeElement !== document.body) {
-    document.activeElement.blur();
-  }
-};
 
 // Reducer handles all state logic **in one place**.
 // Much easier to understand!
 const formReducer = (state, action) => {
   switch (action.type) {
     case 'invalid':
-      unclick();
+      unClick();
       return {
         ...state,
         valid: false,
@@ -28,14 +21,14 @@ const formReducer = (state, action) => {
         message: '',
       };
     case 'success':
-      unclick();
+      unClick();
       return {
         ...state,
         submitted: true,
         success: 'yes',
       };
     case 'error':
-      unclick();
+      unClick();
       return {
         ...state,
         submitted: true,

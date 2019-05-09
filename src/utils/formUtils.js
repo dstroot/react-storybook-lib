@@ -33,7 +33,14 @@ export const formDataParser = form => {
   return data;
 };
 
-// works great, non ie11 compliant
+// function to remove focus from a pushed button
+export const unClick = () => {
+  if (document.activeElement !== document.body) {
+    document.activeElement.blur();
+  }
+};
+
+// works great, non IE11 compliant though
 export const formToJSON = form => {
   let output = {};
   new FormData(form).forEach((value, key) => {
@@ -110,4 +117,5 @@ export default {
   formToJSON,
   formToJSONString,
   matchPattern,
+  unClick,
 };

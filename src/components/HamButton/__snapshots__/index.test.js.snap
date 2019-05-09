@@ -2,8 +2,11 @@
 
 exports[`HamButton it should render 1`] = `
 <div
+  aria-controls="navigation"
+  aria-label="Menu"
   className="hamburger hamburger--squeeze"
   onClick={[MockFunction]}
+  tabIndex="0"
 >
   <span
     className="hamburger-box"
@@ -17,8 +20,11 @@ exports[`HamButton it should render 1`] = `
 
 exports[`HamButton it should render clicked 1`] = `
 <div
+  aria-controls="navigation"
+  aria-label="Menu"
   className="hamburger hamburger--squeeze is-active"
   onClick={[MockFunction]}
+  tabIndex="0"
 >
   <span
     className="hamburger-box"

@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 /**
  * https://jonsuh.com/hamburgers/
  * Let's use CSS rather than JS to animate the burger menu
- *
- * `y add hamburgers`
  */
 
 const HamButton = ({ toggler, clicked }) => {
@@ -19,7 +17,7 @@ const HamButton = ({ toggler, clicked }) => {
     <div
       className={classes}
       onClick={toggler}
-      tabindex="0"
+      tabIndex="0"
       aria-label="Menu"
       aria-controls="navigation"
     >
