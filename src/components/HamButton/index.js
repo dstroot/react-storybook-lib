@@ -16,7 +16,13 @@ const HamButton = ({ toggler, clicked }) => {
     classes = 'hamburger hamburger--squeeze is-active';
   }
   return (
-    <div className={classes} onClick={toggler}>
+    <div
+      className={classes}
+      onClick={toggler}
+      tabindex="0"
+      aria-label="Menu"
+      aria-controls="navigation"
+    >
       <span className="hamburger-box">
         <span className="hamburger-inner" />
       </span>
