@@ -30,6 +30,7 @@
     "react-vis": "^1.11.6",
     "react-waypoint": "^8.1.0",
     "recharts": "^1.5.0",
+    "styled-components": "^4.2.0",
     "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
