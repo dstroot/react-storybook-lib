@@ -1,33 +1,25 @@
-import React from "react";
-import { create } from "react-test-renderer";
-import { mount } from "enzyme";
-import Skeleton from "../Skeleton";
+import React from 'react';
+import { create } from 'react-test-renderer';
+import { mount } from 'enzyme';
+import Skeleton from '../Skeleton';
 
-describe("Skeleton", () => {
-  // mount the component
-  let mountedComponent;
-  const getMountedComponent = () => {
-    if (!mountedComponent) {
-      mountedComponent = mount(<Skeleton />);
-    }
-    return mountedComponent;
-  };
+describe('Skeleton', () => {
+  // // mount the component
+  // let mountedComponent;
+  // const getMountedComponent = () => {
+  //   if (!mountedComponent) {
+  //     mountedComponent = mount(<Skeleton />);
+  //   }
+  //   return mountedComponent;
+  // };
 
-  beforeEach(() => {
-    mountedComponent = undefined;
-  });
+  // beforeEach(() => {
+  //   mountedComponent = undefined;
+  // });
 
-  it("it should render", () => {
+  it('it should render', () => {
     let tree = create(<Skeleton />);
     expect(tree.toJSON()).toMatchSnapshot();
-  });
-
-  it("it should say Skeleton!", () => {
-    const h1 = getMountedComponent()
-      .find("h1")
-      .first();
-
-    expect(h1.text()).toContain("Skeleton!");
   });
 });
 
