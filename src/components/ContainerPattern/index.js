@@ -1,19 +1,16 @@
 import React from 'react';
 
-// loading
-const LoadingView = () => <div className="text-muted">Loading...</div>;
-
 // Planet View
-const LoadingViewSkeleton = () => (
+const Loading = () => (
   <div>
     <h2>
-      <div className="skeleton" />
+      <div style={{ width: '130px' }} className="skeleton" />
     </h2>
     <div>
-      Climate: <div className="skeleton" />
+      <div style={{ width: '100px' }} className="skeleton" />
     </div>
     <div>
-      Terrain: <div className="skeleton" />
+      <div style={{ width: '170px' }} className="skeleton" />
     </div>
   </div>
 );
@@ -35,7 +32,7 @@ const Planet = ({ name, climate, terrain }) => (
 // Main component
 const PlanetView = ({ loading, planet }) => {
   if (loading) {
-    return <LoadingViewSkeleton />;
+    return <Loading />;
   } else if (planet) {
     return <Planet {...planet} />;
   } else {
