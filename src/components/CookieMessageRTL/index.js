@@ -1,41 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-// convert value to boolean
-const getBool = value => {
-  if (typeof value === 'string') {
-    value = value.trim().toLowerCase();
-  }
-  switch (value) {
-    case true:
-    case 'true':
-    case 1:
-    case '1':
-    case 'on':
-    case 'yes':
-      return true;
-    default:
-      return false;
-  }
-};
-
-const CookieMessageLS = () => {
-  // get initial state from localStorage
-  const initialState = () => {
-    // get value
-    let value = localStorage.getItem('cookieMessage') || 'true';
-    // convert value to boolean
-    return getBool(value);
-  };
-
-  const [visible, setVisible] = useState(initialState());
-
-  useEffect(
-    () => {
-      // save latest value in localStorage
-      localStorage.setItem('cookieMessage', visible);
-    },
-    [visible] // when "visible" changes
-  );
+const CookieMessageRTL = () => {
+  const [visible, setVisible] = useState(true);
 
   const hide = () => {
     setVisible(false);
@@ -43,7 +9,7 @@ const CookieMessageLS = () => {
 
   if (visible) {
     return (
-      <div className="fixed-bottom bg-dark">
+      <div data-testid="cookie-message" className="fixed-bottom bg-dark">
         {/* <div className="container">
           <div className="row p-4">
             <div className="col-10 text-light">
@@ -94,4 +60,4 @@ const CookieMessageLS = () => {
   }
 };
 
-export default CookieMessageLS;
+export default CookieMessageRTL;
