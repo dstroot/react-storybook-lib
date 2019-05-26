@@ -5,9 +5,10 @@ import React from 'react';
  * It provides light utility functions on top of react-dom and react-dom/test-utils,
  * in a way that encourages better testing practices.
  */
+
 // React test library
 import { render, fireEvent, cleanup } from 'react-testing-library';
-// this adds custom jest matchers from jest-dom
+// Custom jest matchers from jest-dom
 import 'jest-dom/extend-expect';
 
 // component to test
@@ -20,8 +21,8 @@ afterEach(cleanup);
 describe('CookieMessageRTL', () => {
   it('it should render', () => {
     /**
-     * By default, react-testing-library will create a div and 
-     * append that div to the document.body and this is where 
+     * By default, react-testing-library will create a div and
+     * append that div to the document.body and this is where
      * your react component will be rendered.
      */
     const { container } = render(<CookieMessageRTL />);
@@ -49,7 +50,9 @@ describe('CookieMessageRTL', () => {
 
   it('it should have a button that says "I agree"', () => {
     const { getByText } = render(<CookieMessageRTL />);
-    expect(getByText('I Agree')).toBeInTheDocument();
+    const button = getByText('I Agree');
+    expect(button).toBeInTheDocument();
+    expect(button).toHaveClass('btn');
   });
 
   it('it should disappear when the button is clicked', () => {
@@ -89,7 +92,7 @@ describe('CookieMessageRTL', () => {
  *   - toHaveTextContent
  */
 
- /**
+/**
   * Based on the Guiding Principles, your test should resemble how users 
   * interact with your code (component, page, etc.) as much as possible. 
   * With this in mind, we recommend this order of priority:
@@ -100,13 +103,32 @@ describe('CookieMessageRTL', () => {
   * **getByLabelText**: Only really good for form fields, but this is the 
   * number one method a user finds those elements, so it should be your top preference.
   * 
-getByPlaceholderText: A placeholder is not a substitute for a label. But if that's all you have, then it's better than alternatives.
-getByText: Not useful for forms, but this is the number 1 method a user finds other elements (like buttons to click), so it should be your top preference for non-form elements.
-getByDisplayValue: The current value of a form element can be useful when navigating a page with filled-in values.
-Semantic Queries HTML5 and ARIA compliant selectors. Note that the user experience of interacting with these attributes varies greatly across browsers and assistive technology.
-getByAltText: If your element is one which supports alt text (img, area, and input), then you can use this to find that element.
-getByTitle: The title attribute is not consistently read by screenreaders, and is not visible by default for sighted users
-getByRole: This can be used to select dialog boxes and other difficult-to-capture elements in a more semantic way
-Test IDs
-getByTestId: The user cannot see (or hear) these, so this is only recommended for cases where you can't match by text or it doesn't make sense (the text is dynamic).
+  * **getByPlaceholderText**: A placeholder is not a substitute for a label. But if 
+  * that's all you have, then it's better than alternatives.
+  * 
+  * getByText: Not useful for forms, but this is the number 1 method a user 
+  * finds other elements (like buttons to click), so it should be your top 
+  * preference for non-form elements.
+  * 
+  * getByDisplayValue: The current value of a form element can be useful when 
+  * navigating a page with filled-in values.
+  * 
+  * Semantic Queries HTML5 and ARIA compliant selectors. Note that the user 
+  * experience of interacting with these attributes varies greatly across 
+  * browsers and assistive technology.
+  * 
+  * **getByAltText**: If your element is one which supports alt text (img, area, 
+  * and input), then you can use this to find that element.
+` *`
+  * **getByTitle**: The title attribute is not consistently read by screenreaders, 
+  * and is not visible by default for sighted users.
+  * 
+  * **getByRole**: This can be used to select dialog boxes and other 
+  * difficult-to-capture elements in a more semantic way
+  * 
+  * Test IDs
+  * 
+  * **getByTestId**: The user cannot see (or hear) these, so this is only 
+  * recommended for cases where you can't match by text or it doesn't make 
+  * sense (the text is dynamic).
   */
