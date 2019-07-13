@@ -29,6 +29,7 @@ const useDataApi = (initialUrl, initialData) => {
     () => {
       fetchData();
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [url] // only run if url changes
   );
 

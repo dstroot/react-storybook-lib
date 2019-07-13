@@ -8,6 +8,7 @@ const LoginForm = ({ image }) => {
   const [password, setPassword] = useState('');
   const [size, setSize] = useState(0.01);
   const [time, setTime] = useState('');
+  const [ratio, setRatio] = useState(0);
 
   // custom hook
   let { width, height } = useWindowSize();
@@ -16,7 +17,7 @@ const LoginForm = ({ image }) => {
   const canvas = useRef();
   const img = new Image();
   img.src = image;
-  let imgRatio = 0;
+  // let imgRatio = 0;
 
   // When you call useEffect, you’re telling React to run your “effect”
   // function after flushing changes to the DOM. Effects are declared
@@ -27,16 +28,15 @@ const LoginForm = ({ image }) => {
   // of them as the dependencies for that effect. If one of the
   // dependencies has changed since the last time, the effect will
   // run again. (It will also still run after the initial render)
-  useEffect(
-    () => {
-      let ctx = canvas.current.getContext('2d');
-      img.onload = () => {
-        imgRatio = img.naturalWidth / img.naturalHeight;
-        draw(ctx, width, height);
-      };
-    },
-    [image, size, width, height]
-  );
+  useEffect(() => {
+    let ctx = canvas.current.getContext('2d');
+    img.onload = () => {
+      // imgRatio = img.naturalWidth / img.naturalHeight;
+      setRatio(img.naturalWidth / img.naturalHeight);
+      draw(ctx, width, height);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [image, size, width, height]);
 
   // Calculate the strength of the password using zxcvbn and save
   // the result into our state.
@@ -86,11 +86,11 @@ const LoginForm = ({ image }) => {
     let newY = 0;
 
     // fit image inside canvas
-    if (wrapperRatio > imgRatio) {
-      newHeight = width / imgRatio;
+    if (wrapperRatio > ratio) {
+      newHeight = width / ratio;
       newY = (height - newHeight) / 2;
     } else {
-      newWidth = height * imgRatio;
+      newWidth = height * ratio;
       newX = (width - newWidth) / 2;
     }
 

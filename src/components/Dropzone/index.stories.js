@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action, configureActions } from '@storybook/addon-actions';
+import { action } from '@storybook/addon-actions';
 
 // components
 import Dropzone from '../Dropzone';

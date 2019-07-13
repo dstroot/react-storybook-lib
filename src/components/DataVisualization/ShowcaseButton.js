@@ -10,6 +10,7 @@ function ShowcaseButton(props) {
   );
 }
 
+// eslint-disable-next-line react/no-typos
 ShowcaseButton.PropTypes = {
   buttonContent: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,

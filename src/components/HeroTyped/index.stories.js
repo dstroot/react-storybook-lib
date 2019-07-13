@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 import HeroTyped from '../HeroTyped';
 import image from '../HeroTyped/media/hatch2.jpg';
