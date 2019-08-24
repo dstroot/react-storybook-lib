@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IdealImage it should render 1`] = `
+exports[`ShowIdealImage it should render 1`] = `
 <div
   onClick={[Function]}
   onKeyPress={[Function]}

@@ -1,12 +1,13 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 // import poster from "../img/video-placeholder.png";
 
 // https://www.sample-videos.com/
 // https://developers.google.com/web/fundamentals/media/video
 
 const style = {
-  width: "100vw",
-  height: "auto"
+  width: '100vw',
+  height: 'auto',
 };
 
 const Video = ({ videoURL, poster }) => (
@@ -19,6 +20,13 @@ const Video = ({ videoURL, poster }) => (
     <p>This browser does not support the video element.</p>
   </video>
 );
+
+Video.propTypes = {
+  /** the video URL */
+  videoURL: PropTypes.string.isRequired,
+  /** The preload placeholder image URL */
+  poster: PropTypes.string.isRequired,
+};
 
 export default Video;
 

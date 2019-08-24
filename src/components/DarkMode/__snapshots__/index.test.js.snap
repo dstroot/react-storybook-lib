@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DarkMode it should render 1`] = `"Your browser doesn't support dark mode!"`;
