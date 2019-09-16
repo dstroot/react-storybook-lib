@@ -74,6 +74,7 @@ exports[`chart it should render 1`] = `
             style={
               Object {
                 "left": "0%",
+                "right": "auto",
                 "width": "60.60606060606061%",
               }
             }
@@ -94,6 +95,8 @@ exports[`chart it should render 1`] = `
             style={
               Object {
                 "left": "60.60606060606061%",
+                "right": "auto",
+                "transform": "translateX(-50%)",
               }
             }
             tabIndex={0}
@@ -140,6 +143,7 @@ exports[`chart it should render 1`] = `
             style={
               Object {
                 "left": "0%",
+                "right": "auto",
                 "width": "53.535353535353536%",
               }
             }
@@ -160,6 +164,8 @@ exports[`chart it should render 1`] = `
             style={
               Object {
                 "left": "53.535353535353536%",
+                "right": "auto",
+                "transform": "translateX(-50%)",
               }
             }
             tabIndex={0}
@@ -206,6 +212,7 @@ exports[`chart it should render 1`] = `
             style={
               Object {
                 "left": "0%",
+                "right": "auto",
                 "width": "44.44444444444444%",
               }
             }
@@ -309,6 +316,8 @@ exports[`chart it should render 1`] = `
             style={
               Object {
                 "left": "44.44444444444444%",
+                "right": "auto",
+                "transform": "translateX(-50%)",
               }
             }
             tabIndex={0}

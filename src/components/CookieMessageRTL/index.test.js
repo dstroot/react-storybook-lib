@@ -7,7 +7,7 @@ import React from 'react';
  */
 
 // React test library
-import { render, fireEvent, cleanup } from 'react-testing-library';
+import { render, fireEvent, cleanup } from '@testing-library/react';
 // Custom jest matchers from jest-dom
 import 'jest-dom/extend-expect';
 
