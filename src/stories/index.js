@@ -35,5 +35,27 @@ storiesOf('@Welcome|Welcome', module)
   .add('to Storybook', () => (
     <div>
       <h1 className="display-4 text-center">Welcome to our storybook!</h1>
+      <div className="">
+        <p className="mt-5">Other components and design systems:</p>
+        <ul>
+          <li>
+            <a href="https://react-rainbow.web.app/">React Rainbow</a>
+          </li>
+          <li>
+            <a href="https://polaris.shopify.com/">Shopify Design System</a>
+          </li>
+          <li>
+            <a href="https://www.carbondesignsystem.com/">
+              Carbon Design System
+            </a>
+          </li>
+          <li>
+            <a href="https://auth0-cosmos.now.sh/docs/#/">Auth0 Cosmos</a>
+          </li>
+          <li>
+            <a href="https://github.com/airbnb/lunar">AirBNB Lunar</a>
+          </li>
+        </ul>
+      </div>
     </div>
   ));
