@@ -24,6 +24,7 @@
     "react-google-maps": "^9.4.5",
     "react-ideal-image": "^0.0.5",
     "react-images": "^1.0.0",
+    "react-mailchimp-subscribe": "^2.1.0",
     "react-markdown": "^4.1.0",
     "react-notifications-component": "^1.1.1",
     "react-particles-js": "^2.7.0",
