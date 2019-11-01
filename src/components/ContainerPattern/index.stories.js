@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react';
 // components
 import PlanetView from '../ContainerPattern';
 import PlanetContainer from './container';
+import Post from './container';
 
 const planet = {
   name: 'Dagobah',
@@ -47,4 +48,9 @@ storiesOf('API|PlanetView', module)
   .add('show PlanetView loading', () => <PlanetView loading />)
   .add('show PlanetView error', () => <PlanetView error />)
   .add('show PlanetView', () => <PlanetView planet={planet} />)
-  .add('show PlanetContainer', () => <PlanetContainer />);
+  .add('show PlanetContainer', () => (
+    <>
+      <Post />
+      <PlanetContainer />
+    </>
+  ));

@@ -1,6 +1,7 @@
 import React from 'react';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-//https://www.npmjs.com/package/react-mailchimp-subscribe
+// https://www.npmjs.com/package/react-mailchimp-subscribe
+// https://github.com/thomaswangio/react-subscribe-card
 
 // styles
 import './styles.scss';
