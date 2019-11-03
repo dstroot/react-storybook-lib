@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PlanetView from './index';
+// import useFetcher from '../../hooks/useFetcher';
 
 // State:
 // { loading: true }
@@ -28,16 +29,29 @@ export const Post = () => {
     );
   }
 
-  // return (
-  //   <div>
-  //     <h2>{data.planet.name}</h2>
-  //     <div>Climate: {data.planet.climate}</div>
-  //     <div>Terrain: {data.planet.terrain}</div>
-  //   </div>
-  // );
-
-  return <PlanetView {...data.planet} />;
+  return <PlanetView planet={data.planet} />;
 };
+
+// export const TestComponent = () => {
+//   const { isLoading, data, error } = useFetcher(
+//     'https://www.swapi.co/api/planets/50'
+//   );
+
+//   if (isLoading) {
+//     return <div>Loading...</div>;
+//   }
+
+//   if (error) {
+//     return (
+//       <div className="text-danger">
+//         An error occurred loading the data.
+//         {/* <pre>{JSON.stringify(error, null, 2)}</pre> */}
+//       </div>
+//     );
+//   }
+
+//   return <PlanetView planet={data} />;
+// };
 
 class PlanetContainer extends React.Component {
   state = { loading: true };

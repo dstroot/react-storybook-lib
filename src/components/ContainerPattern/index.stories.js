@@ -4,7 +4,8 @@ import { storiesOf } from '@storybook/react';
 // components
 import PlanetView from '../ContainerPattern';
 import PlanetContainer from './container';
-import Post from './container';
+import { Post } from './container';
+// import { TestComponent } from './container';
 
 const planet = {
   name: 'Dagobah',

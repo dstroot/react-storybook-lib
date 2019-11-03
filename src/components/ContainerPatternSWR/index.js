@@ -1,5 +1,6 @@
 import React from 'react';
 import useSWR from 'swr'; // https://swr.now.sh/
+// import validateResponse from '../../utils/fetchUtils';
 
 // Loading View
 const Loading = () => (
@@ -30,39 +31,36 @@ const Planet = ({ name, climate, terrain }) => (
   </div>
 );
 
+const validateResponse = res => {
+  if (!res.ok) {
+    throw new Error(res.status + ' ' + res.statusText);
+  } else {
+    if (res.status >= 200 && res.status < 300) {
+      return res;
+    } else {
+      throw new Error(`Request rejected with status ${res.status}`);
+    }
+  }
+};
+
+const getJSON = res => {
+  return res.json();
+};
+
 // get data
-// TODO - return error?
-const getPlanet = url => fetch(url).then(_ => _.json());
-
-// // get data
-// const getData = async url => {
-//   try {
-//     // get data
-//     const res = await fetch(url);
-
-//     // process response
-//     console.log(res);
-//     if (res.ok) {
-//       const data = await res.json();
-//       return data;
-//     } else {
-//       throw new Error(res.status + ' ' + res.statusText);
-//     }
-//   } catch (error) {
-//     throw error;
-//   }
-// };
+const getData = url =>
+  fetch(url)
+    .then(validateResponse)
+    .then(getJSON);
 
 const PlanetContainer = ({ url }) => {
   const { data, error } = useSWR(
     'https://www.swapi.co/api/planets/50',
-    getPlanet
+    getData
   );
 
   if (error) return <ErrorView />;
-
   if (!data) return <Loading />;
-
   return <Planet {...data} />;
 };
 
