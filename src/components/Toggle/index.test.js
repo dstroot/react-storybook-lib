@@ -3,9 +3,9 @@ import Toggle from '../Toggle';
 import renderer from 'react-test-renderer';
 
 test('Toggle renders a toggle switch', () => {
-  const [value, setValue] = useState(false);
 
   const component = renderer.create(
+    const [value, setValue] = useState(false);
     <Toggle isOn={false} handleToggle={() => setValue(!value)} />
   );
 

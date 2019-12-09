@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`If renders when false 1`] = `
+<div>
+  This rendes when false!
+</div>
+`;
+
+exports[`If renders when true 1`] = `
+<div>
+  This rendes when true!
+</div>
+`;

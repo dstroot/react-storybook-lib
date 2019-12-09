@@ -6,7 +6,7 @@ import MailchimpSubscribe from 'react-mailchimp-subscribe';
 // styles
 import './styles.scss';
 
-const url = process.env.REACT_APP_MAILCHIMP_URL;
+const url = process.env.REACT_APP_MAILCHIMP_URL || 'test';
 
 const CustomForm = ({ status, message, onValidated }) => {
   let email;

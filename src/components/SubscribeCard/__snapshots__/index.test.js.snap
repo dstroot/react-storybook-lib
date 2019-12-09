@@ -1,174 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cards it should render 1`] = `
+exports[`SubscribeCard it should render 1`] = `
 <div
-  className="container-fluid bg-light pb-5"
+  className="container-fluid bg-light"
 >
   <div
     className="row"
   >
     <div
-      className="col text-center p-4"
-    >
-      <h1
-        className="card-display"
-      >
-        INSIGHTS TO HELP YOU MEET YOUR GOALS
-      </h1>
-    </div>
-  </div>
-  <div
-    className="row"
-  >
-    <div
-      className="card-deck"
+      className="col-12"
     >
       <div
-        className="card"
+        className="m-5 align-items-center bg-white p-3"
       >
-        <img
-          alt="retirement planning"
-          className="card-img-top"
-          src="card1.jpg"
-        />
-        <div
-          className="card-body"
+        <h5
+          className="text-muted"
         >
-          <h5
-            className="card-title text-muted"
-          >
-            RETIREMENT PLANNING
-          </h5>
-          <h3>
-            Make the Most of Your Retirement With an Informed Income Strategy.
-          </h3>
-        </div>
-        <div
-          className="card-footer bg-white"
+          Get hooked up!
+        </h5>
+        <p
+          className="lead"
         >
-          <a
-            className="btn btn-primary"
-            href="/"
-          >
-            Read
-          </a>
-          <div
-            className="d-inline p-2"
-          >
-            <svg
-              height="15px"
-              width="15px"
-            >
-              clock.svg
-            </svg>
-            <strong
-              className="align-middle"
-            >
-               5 min read
-            </strong>
-          </div>
-        </div>
-      </div>
-      <div
-        className="card"
-      >
-        <img
-          alt="business"
-          className="card-img-top"
-          src="card2.jpg"
-        />
+          Enter your email to get weekly updates.
+        </p>
         <div
-          className="card-body"
+          className="px-3 py-4 mb-3"
         >
-          <h5
-            className="card-title text-muted"
+          <form
+            onSubmit={[Function]}
           >
-            CAREER AND BUSINESS
-          </h5>
-          <h3>
-            Don’t Put Off Saving for Retirement
-          </h3>
-          <p
-            className="card-text"
-          >
-            Start building your nest egg early to prepare for retirement.
-          </p>
-        </div>
-        <div
-          className="card-footer bg-white"
-        >
-          <a
-            className="btn btn-primary"
-            href="/"
-          >
-            Read
-          </a>
-          <div
-            className="d-inline p-2"
-          >
-            <svg
-              height="15px"
-              width="15px"
+            <div
+              className="input-group"
             >
-              clock.svg
-            </svg>
-            <strong
-              className="align-middle"
-            >
-               7 min read
-            </strong>
-          </div>
-        </div>
-      </div>
-      <div
-        className="card"
-      >
-        <img
-          alt="older couple"
-          className="card-img-top"
-          src="card3.jpg"
-        />
-        <div
-          className="card-body"
-        >
-          <h5
-            className="card-title text-muted"
-          >
-            RETIREMENT PLANNING
-          </h5>
-          <h3>
-            Deciding When to Claim Retirement Benefits
-          </h3>
-          <p
-            className="card-text"
-          >
-            Claiming benefits when you are younger than your full retirement age can mean missing out on hundreds of dollars per month.
-          </p>
-        </div>
-        <div
-          className="card-footer bg-white"
-        >
-          <a
-            className="btn btn-primary"
-            href="/"
-          >
-            Read
-          </a>
-          <div
-            className="d-inline p-2"
-          >
-            <svg
-              height="15px"
-              width="15px"
-            >
-              clock.svg
-            </svg>
-            <strong
-              className="align-middle"
-            >
-               3 min read
-            </strong>
-          </div>
+              <input
+                className="form-control"
+                placeholder="Your email"
+                type="email"
+                value={null}
+              />
+              <div
+                className="input-group-append"
+              >
+                <button
+                  className="btn btn-secondary"
+                  type="submit"
+                >
+                  Sign me up
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

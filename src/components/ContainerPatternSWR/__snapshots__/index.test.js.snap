@@ -23,10 +23,37 @@ Object {
 }
 `;
 
-exports[`PlanetView it should render 1`] = `
-<div
-  className="text-danger"
->
-  Something went wrong! Please try again.
+exports[`PlanetContainer it should render 1`] = `
+<div>
+  <h2>
+    <div
+      className="skeleton"
+      style={
+        Object {
+          "width": "130px",
+        }
+      }
+    />
+  </h2>
+  <div>
+    <div
+      className="skeleton"
+      style={
+        Object {
+          "width": "100px",
+        }
+      }
+    />
+  </div>
+  <div>
+    <div
+      className="skeleton"
+      style={
+        Object {
+          "width": "170px",
+        }
+      }
+    />
+  </div>
 </div>
 `;

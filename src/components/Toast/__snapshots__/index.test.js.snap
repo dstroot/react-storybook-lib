@@ -11,7 +11,7 @@ exports[`Toast renders the toast page 1`] = `
       className="col mt-5"
     >
       <div
-        className="react-notification-root"
+        className="react-notification-root "
       >
         <div
           className="notification-container-top-left"
