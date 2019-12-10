@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Toggle from '../Toggle';
 import renderer from 'react-test-renderer';
 
-test('Toggle renders a toggle switch', () => {
+// don't do this - its just to make Toggle render
+let value = true;
+const toggle = () => {
+  value = !value;
+};
 
+test('Toggle renders a toggle switch - OFF', () => {
   const component = renderer.create(
-    const [value, setValue] = useState(false);
-    <Toggle isOn={false} handleToggle={() => setValue(!value)} />
+    <Toggle isOn={false} handleToggle={toggle} color="blue" />
+  );
+
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test('Toggle renders a toggle switch - ON', () => {
+  const component = renderer.create(
+    <Toggle isOn={true} handleToggle={toggle} color="blue" />
   );
 
   let tree = component.toJSON();

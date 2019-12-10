@@ -2,9 +2,6 @@
 
 exports[`LightboxExample it should render 1`] = `
 <div>
-  <h2>
-    Using with a Lightbox component
-  </h2>
   <div>
      
   </div>

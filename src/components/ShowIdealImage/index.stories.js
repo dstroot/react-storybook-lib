@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 // component
-import ShowIdealImage from '../ShowIdealImage';
+import ShowIdealImage from '.';
 
 // story
 storiesOf('Misc|IdealImage', module).add(

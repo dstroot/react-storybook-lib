@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import ShowIdealImage from '../ShowIdealImage';
+import ShowIdealImage from '.';
 
 describe('ShowIdealImage', () => {
   it('it should render', () => {

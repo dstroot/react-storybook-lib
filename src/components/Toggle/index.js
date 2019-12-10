@@ -30,11 +30,11 @@ const Toggle = ({ isOn, handleToggle, onColor }) => {
 };
 
 Toggle.propTypes = {
-  /** Should be set to "true" if the form has been submitted */
+  /** Boolean to termine of the toggle is on or off */
   isOn: PropTypes.bool.isRequired,
-  /** Success is a string that takes either "yes", "no", or "wait" */
+  /** Function to perform an action due to toggle */
   handleToggle: PropTypes.func.isRequired,
-  /** Success is a string that takes either "yes", "no", or "wait" */
+  /** Color for switched on view */
   onColor: PropTypes.string,
 };
 
