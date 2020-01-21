@@ -1,13 +1,13 @@
-import React from "react";
-import renderer from "react-test-renderer";
+import React from 'react';
+import { render } from '@testing-library/react';
 
 // import component to test
-import useMediaQuery from "../useMediaQuery";
+import useMediaQuery from '../useMediaQuery';
 
 // simulate window resize
 const fireResize = width => {
   window.innerWidth = width;
-  window.dispatchEvent(new Event("resize"));
+  window.dispatchEvent(new Event('resize'));
 };
 
 // Test component that uses the Hook
@@ -16,12 +16,16 @@ const EffecfulComponent = () => {
   return <span>{result}</span>;
 };
 
-describe("useMediaQuery", () => {
-  it("it should render", () => {
+describe('useMediaQuery', () => {
+  it('renders', () => {
+    const { asFragment } = render(<EffecfulComponent />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('it should change when window width changes', () => {
     fireResize(320);
-    const component = renderer.create(<EffecfulComponent />);
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    const { asFragment } = render(<EffecfulComponent />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });
 

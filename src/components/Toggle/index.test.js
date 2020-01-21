@@ -10,7 +10,7 @@ const toggle = () => {
 
 test('Toggle renders a toggle switch - OFF', () => {
   const component = renderer.create(
-    <Toggle isOn={false} handleToggle={toggle} color="blue" />
+    <Toggle isOn={false} handleToggle={toggle} onColor="blue" />
   );
 
   let tree = component.toJSON();
@@ -19,7 +19,7 @@ test('Toggle renders a toggle switch - OFF', () => {
 
 test('Toggle renders a toggle switch - ON', () => {
   const component = renderer.create(
-    <Toggle isOn={true} handleToggle={toggle} color="blue" />
+    <Toggle isOn={true} handleToggle={toggle} onColor="blue" />
   );
 
   let tree = component.toJSON();

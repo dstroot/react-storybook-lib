@@ -17,13 +17,18 @@ configure({ adapter: new Adapter() });
 // his is e.g. the case with window.matchMedia(). Jest returns TypeError:
 // window.matchMedia is not a function and doesn't properly execute the test.
 // In this case, mocking matchMedia in the test file should solve the issue:
+
+// mock media query support
 window.matchMedia = jest.fn().mockImplementation(query => {
   return {
     matches: false,
     media: query,
     onchange: null,
-    addListener: jest.fn(),
-    removeListener: jest.fn(),
+    //   addListener: jest.fn(), // deprecated
+    //   removeListener: jest.fn(), // deprecated
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+    dispatchEvent: jest.fn(),
   };
 });
 
